@@ -343,61 +343,62 @@ The default networks are presented in the following table.  These defaults can b
 Each network defined in the system has the following parameters:
 
 <a id="table-Network-Parameters" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 1.2: Network Parameters</small></big></b></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <th>vlan 	</th>
-  <th>Integer 	</th>
-  <th>The vlan to use on the switch and interfaces for this network
-		</th>
-</tr>
-<tr>
-  <th>use_vlan 	</th>
-  <th>true 	</th>
-  <th>A value of true indicates that the vlan should applied to the interface. A value of false assumes that the node will receive untagged traffic for this network. </th>
-		</tr>
-<tr>
-  <th>add_bridge 	</th>
-  <th>false 	</th>
-  <th>indicates if the network should have a bridge built on top of it. The bridge will be br.	</th>
- </tr>
-<tr>
-  <th>subnet 	</th>
-  <th>IP Address	</th>
-  <th>The subnet for this network 
-		</th>
-</tr>
-<tr>
-  <th>netmask	</th>
-  <th>Netmask 	</th>
-  <th>The netmask for this network 
-		</th>
-</tr>
-<tr>
-  <th>router 	</th>
-  <th>IP Address	</th>
-  <th>The default router for this network 
-		</th>
-</tr>
-<tr>
-  <th>broadcast	</th>
-  <th>IP Address	</th>
-  <th>The default broadcast address for this network 
-		</th>
-</tr>
-<tr>
-  <th>ranges 	</th>
-  <th>map		</th>
-  <th>This contains a map of strings to start and stop values for network. This allows for sub-ranges with the network for specific uses. e.g. dhcp, admin, bmc, hosts.		</th>
- </tr>
+<table>
+<caption>Table 1.2: Network Parameters</caption>
+	<tr>
+  		<th>Name 					</th>
+  		<th>Default 				</th>
+  		<th>Description 				</th>
+	</tr>
+	<tr>
+ 	 	<th>vlan 					</th>
+  		<th>Integer 				</th>
+  		<th>The vlan to use on the switch and interfaces 
+		for this network				</th>
+	</tr>
+	<tr>
+  		<th>use_vlan 				</th>
+  		<th>true 					</th>
+  		<th>A value of true indicates that the vlan should 
+		applied to the interface. A value of false assumes 
+		that the node will receive untagged traffic for 
+		this network. 				</th>
+	</tr>
+	<tr>
+  		<th>add_bridge 				</th>
+  		<th>false 				</th>
+  		<th>indicates if the network should have a bridge built 
+		on top of it. The bridge will be br.		</th>
+ 	</tr>
+	<tr>
+  		<th>subnet 				</th>
+  		<th>IP Address				</th>
+  		<th>The subnet for this network 		</th>
+	</tr>
+	<tr>
+  		<th>netmask				</th>
+  		<th>Netmask 				</th>
+  		<th>The netmask for this network 		</th>
+	</tr>
+	<tr>
+  		<th>router 				</th>
+  		<th>IP Address				</th>
+  		<th>The default router for this network 	</th>
+	</tr>
+	<tr>
+  		<th>broadcast				</th>
+  		<th>IP Address				</th>
+  		<th>The default broadcast address for this network</th>
+	</tr>
+	<tr>
+  		<th>ranges 				</th>
+  		<th>map					</th>
+  		<th>This contains a map of strings to start and stop 
+		values for network. This allows for sub-ranges with
+		the network for specific uses. e.g. dhcp, admin, 
+		bmc, hosts.				</th>
+ 	</tr>
 </table>
-
-<br>
 
 <a id="IP-Addressing"/>
 ##IP Addressing
@@ -405,62 +406,62 @@ Each network defined in the system has the following parameters:
 The IP address can be assigned in this fashion, using large subnets to support many machines on the production network.  The following table shows the default networks which are installed when the default Network JSON is used.  In each network, the first 10 IP addresses are reserved for switches, routers, and firewalls.
 
 <a id="table-Default-Network-Addresses" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 1.3: Default Network Addresses</small></big></b></caption>
-<tr>
-  <th>LAN 	</th>
-  <th>VLAN	</th>
-  <th>Network 	</th>
-  <th>Subnet	</th>
-  <th>Gateway	</th>
-  <th>802.1q	</th>
-  <th>Bridged	</th>
-</tr>
-<tr>
-  <td>Storage	</td>
-  <td>200		</td>
-  <td>192.168.125.0	</td>
-  <td>255.255.255.0	</td>
-  <td>none	</td>
-  <td>Yes		</td>
-  <td>No		</td>
-</tr>
-<tr>
-  <td>Public	</td>
-  <td>300		</td>
-  <td>192.168.122.0	</td>
-  <td>255.255.255.0	</td>
-  <td>192.168.122.1	</td>
-  <td>Yes		</td>
-  <td>No		</td>
-</tr>
-<tr>
-  <td>Admin	</td>
-  <td>100		</td>
-  <td>192.168.124.0	</td>
-  <td>255.255.255.0	</td>
-  <td>192.168.124.1	</td>
-  <td>No		</td>
-  <td>No		</td>
-</tr>
-<tr>
-  <td>BMC		</td>
-  <td>100		</td>
-  <td>192.168.124.0	</td>
-  <td>255.255.255.0	</td>
-  <td>192.168.124.1	</td>
-  <td>No		</td>
-  <td>No		</td>
-</tr>
-<tr>
-  <td>BMC_Vlan	</td>
-  <td>100		</td>
-  <td>192.168.124.0	</td>
-  <td>255.255.255.0	</td>
-  <td>192.168.124.1	</td>
-  <td>No		</td>
-  <td>No		</td>
-</tr>
+<table>
+<caption>Table 1.3: Default Network Addresses</caption>
+	<tr>
+  		<th>LAN 					</th>
+  		<th>VLAN					</th>
+  		<th>Network 				</th>
+  		<th>Subnet				</th>
+  		<th>Gateway				</th>
+  		<th>802.1q				</th>
+  		<th>Bridged				</th>
+	</tr>
+	<tr>
+  		<td>Storage				</td>
+  		<td>200					</td>
+  		<td>192.168.125.0				</td>
+  		<td>255.255.255.0				</td>
+  		<td>none					</td>
+  		<td>Yes					</td>
+  		<td>No					</td>
+	</tr>
+	<tr>
+ 		<td>Public				</td>
+  		<td>300					</td>
+  		<td>192.168.122.0				</td>
+  		<td>255.255.255.0				</td>
+  		<td>192.168.122.1				</td>
+  		<td>Yes					</td>
+  		<td>No					</td>
+	</tr>
+	<tr>
+  		<td>Admin					</td>
+  		<td>100					</td>
+  		<td>192.168.124.0				</td>
+  		<td>255.255.255.0				</td>
+  		<td>192.168.124.1				</td>
+  		<td>No					</td>
+  		<td>No					</td>
+	</tr>
+	<tr>
+  		<td>BMC					</td>
+  		<td>100					</td>
+  		<td>192.168.124.0				</td>
+  		<td>255.255.255.0				</td>
+  		<td>192.168.124.1				</td>
+  		<td>No					</td>
+  		<td>No					</td>
+	</tr>
+	<tr>
+  		<td>BMC_Vlan				</td>
+  		<td>100					</td>
+  		<td>192.168.124.0				</td>
+  		<td>255.255.255.0				</td>
+  		<td>192.168.124.1				</td>
+  		<td>No					</td>
+  		<td>No					</td>
+	</tr>
 </table>
 
 > #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") Each network's ".1" address is reserved for the network gateway.
@@ -478,38 +479,38 @@ Crowbar is delivered as a Web application available on the admin node using HTTP
 > #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") Nagios, Ganglia and Chef can be accessed directly from a web browser or via selecting one of the links on the Dashboard in the Crowbar UI.
 
 <a id="table-Service-URLs" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 2.1: Service URLs</small></big></caption>
-<tr>
-  <th>Service		</th>
-  <th>URL			</th>
-  <th>Credentials 		</th>
-</tr>
-<tr>
-  <td>SSH				</td>
-  <td>root@192.168.124.10		</td>
-  <td>crowbar			</td>
- </tr>
-<tr>
-  <td>Crowbar UI			</td>
-  <td>http://192.168.124.10:3000/	</td>
-  <td>crowbar / crowbar		</td>
- </tr>
-<tr>
-  <td>Nagios UI			</td>
-  <td>http://192.168.124.10/nagios3	</td>
-  <td>nagiosadmin / password		</td>
- </tr>
-<tr>
-  <td>Ganglia UI			</td>
-  <td>http://192.168.124.10/ganglia	</td>
-  <td>nagiosadmin / password		</td>
- </tr>
-<tr>
-  <td>Chef UI			</td>
-  <td>http://192.168.124.10:4040/	</td>
-  <td>admin / password		</td>
- </tr>
+<table>
+<caption>Table 2.1: Service URLs</caption>
+	<tr>
+		<th>Service				</th>
+		<th>URL					</th>
+		<th>Credentials 				</th>
+	</tr>
+	<tr>
+  		<td>SSH					</td>
+  		<td>root@192.168.124.10			</td>
+  		<td>crowbar				</td>
+ 	</tr>
+	<tr>
+  		<td>Crowbar UI				</td>
+  		<td>http://192.168.124.10:3000/		</td>
+  		<td>crowbar / crowbar			</td>
+ 	</tr>
+	<tr>
+  		<td>Nagios UI				</td>
+  		<td>http://192.168.124.10/nagios3		</td>
+  		<td>nagiosadmin / password			</td>
+ 	</tr>
+	<tr>
+  		<td>Ganglia UI				</td>
+  		<td>http://192.168.124.10/ganglia		</td>
+  		<td>nagiosadmin / password			</td>
+ 	</tr>
+	<tr>
+  		<td>Chef UI				</td>
+  		<td>http://192.168.124.10:4040/		</td>
+  		<td>admin / password			</td>
+ 	</tr>
 </table>
 
 > #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") Crowbar has been tested on the following browsers: FireFox 3.5+, FireFox 4.0, Internet Explorer 8, and Safari 5.  HTML5 compatibility and a minimum screen resolution of 1024x768 are recommended.
@@ -665,80 +666,79 @@ Barclamps and Roles.
 The buttons on the top of the details panel (Identify, Power On, Shutdown and Reboot) use the node's IPMI interface to change the node's physical state.  These states cause the node status to be unknown. These buttons are only available if the system is able to successfully configure the BMC on the target system.
 
 <a id="table-Details Panel Buttons" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 2-3: Details Panel Buttons</small></big></caption>
-<tr>
-  <th>Button	</th>
-  <th>Action	</th>
-  <th>Useful When	</th>
-</tr>
-<tr>
-  <td>Identify						</td>
-  <td>Causes the identify light to blink for 15 seconds.		</td>
-  <td>Trying to identify a node within a rack.			</td>
- </tr>
-<tr>
-  <td>Power On						</td>
-  <td>Sends a power on signal to the BMC of the selected system.	</td>
-  <td>Remotely powering on a system.				</td>
- </tr>
-<tr>
-  <td>Shutdown						</td>
-  <td>Sends a power off signal to the BMC of the selected system.	</td>
-  <td>Remotely powering on a system.				</td>
- </tr>
-<tr>
-  <td>Reboot						</td>
-  <td>Sends a power cycle signal to the BMC of the selected system.	</td>
-  <td>Remotely power cycling a system, which has stopped responding.	</td>
- </tr>
+<table>
+<caption>Table 2-3: Details Panel Buttons</caption>
+	<tr>
+		<th>Button						</th>
+  		<th>Action						</th>
+  		<th>Useful When						</th>
+	</tr>
+	<tr>
+  		<td>Identify						</td>
+  		<td>Causes the identify light to blink for 15 seconds.		</td>
+  		<td>Trying to identify a node within a rack.			</td>
+ 	</tr>
+	<tr>
+  		<td>Power On						</td>
+ 		<td>Sends a power on signal to the BMC of the selected system.	</td>
+  		<td>Remotely powering on a system.				</td>
+ 	</tr>
+	<tr>
+  		<td>Shutdown						</td>
+  		<td>Sends a power off signal to the BMC of the selected system.	</td>
+  		<td>Remotely powering on a system.				</td>
+ 	</tr>
+	<tr>
+  		<td>Reboot						</td>
+  		<td>Sends a power cycle signal to the BMC of the selected system.	</td>
+  		<td>Remotely power cycling a system, which has stopped responding.	</td>
+ 	</tr>
 </table>
 
 The buttons on the bottom of the details panel (Delete, Reset, Reinstall and Hardware Update) reset the node's deployment state.  These functions are very useful during lab configurations when the system is being continuously reconfigured.  The buttons take the following actions:
 
 <a id="table-Default-Network-Addresses" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 2-4: Buttons on Bottom of Details Panel</small></big></caption>
-<tr>
-  <th>Button	</th>
-  <th>Action	</th>
-  <th>Config Lost?	</th>
-  <th>Reboot?	</th>
-  <th>Useful When	</th>
-</tr>
-<tr>
-  <td>Delete		</td>
-  <td>Completely removes all records of the node from the Crowbar/Chef database.  If a node is deleted, it is rediscovered if it reboots.
-			</td>
-  <td>Yes			</td>
-  <td>No			</td>
-  <td>Removing nodes.	</td>
- </tr>
-<tr>
-  <td>Reset		</td>
-  <td>Removes all the roles assigned to the node and reimage it back to an unassigned node.			</td>
-  <td>Yes			</td>
-  <td>Yes			</td>
-  <td>Reallocate the node for a new purpose.
-			</td>
- </tr>
-<tr>
-  <td>Reinstall		</td>
-  <td>Reimages the node and then reapply the current deployment profile to the node.  This effectively rebuilds the server back to a pristine state.						</td>
-  <td>No			</td>
-  <td>Yes			</td>
-  <td>Tuning the Chef recipes or configuration details.							</td>
- </tr>
-<tr>
-  <td>Hardware Update	</td>
-  <td>Keeps the current configuration, but forces the node to reboot.
-			</td>
-  <td>Yes			</td>
-  <td>Yes			</td>
-  <td>To apply BIOS or RAID updates.
-			</td>
- </tr>
-
+<table>
+<caption>Table 2-4: Buttons on Bottom of Details Panel</caption>
+	<tr>
+  		<th>Button						</th>
+  		<th>Action						</th>
+  		<th>Config Lost?						</th>
+  		<th>Reboot?						</th>
+  		<th>Useful When						</th>
+	</tr>
+	<tr>
+  		<td>Delete						</td>
+  		<td>Completely removes all records of the node from the Crowbar/Chef 
+		database.  If a node is deleted, it is rediscovered if it reboots.	</td>
+  		<td>Yes							</td>
+  		<td>No							</td>
+  		<td>Removing nodes.						</td>
+ 	</tr>
+	<tr>
+  		<td>Reset							</td>
+  		<td>Removes all the roles assigned to the node and reimage it back 
+		to an unassigned node.					</td>
+  		<td>Yes							</td>
+  		<td>Yes							</td>
+  		<td>Reallocate the node for a new purpose.			</td>
+ 	</tr>
+	<tr>
+  		<td>Reinstall						</td>
+  		<td>Reimages the node and then reapply the current deployment 
+		profile to the node.  This effectively rebuilds the server back to 
+		a pristine state.						</td>
+  		<td>No							</td>
+  		<td>Yes							</td>
+  		<td>Tuning the Chef recipes or configuration details.		</td>
+ 	</tr>
+	<tr>
+  		<td>Hardware Update						</td>
+  		<td>Keeps the current configuration, but forces the node to reboot.	</td>
+  		<td>Yes							</td>
+  		<td>Yes							</td>
+		<td>To apply BIOS or RAID updates.				</td>
+ 	</tr>
 </table>
 
 
@@ -900,66 +900,75 @@ This is a transient state that represents the running chef-client. It is the tim
 ###Included Barclamps
 
 <a id="table-Default-Network-Addresses" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.1: Barclamps</small></big></caption>
-<tr>
-  <th>Barclamp 		</th>
-  <th>Function / Comments	</th>
- </tr>
-<tr>
-  <td>Crowbar	</td>
-  <td>The roles and recipes to set up the barclamp framework.  References other barclamps.  Modify the default proposal to change the Usernames and passwords for access to the Crowbar UI.
-</td>
- </tr>
-<tr>
-  <td>Deployer  	</td>
-  <td>Initial classification system for the Crowbar environment (aka the state machine) </td>
- </tr>
-<tr>
-  <td>Provisioner	</td>
-  <td>The roles and recipes to set up the provisioning server and a base environment for all nodes </td>
- </tr>
-<tr>
-  <td>Network  	</td>
-  <td>Instantiates network interfaces on the Crowbar managed systems. Also manages the address pool. </td>
- </tr>
-<tr>
-  <td> RAID  	</td>
-  <td>Sets up LSI RAID controllers in a variety of configurations.  If missing, you can performed it manually.</td>
- </tr>
-<tr>
-  <td> BIOS  	</td>
-  <td>Configures BIOS options for Dell PowerEdge C servers.  If missing, can be performed manually.</td>
- </tr>
-<tr>
-  <td>IPMI  	</td>
-  <td>Allows management of the IP Management Interface (IPMI) on servers when the BMC network is enabled.</td>
- </tr>
-<tr>
-  <td>NTP  </td>
-  <td>Common NTP service for the cluster (required for secure access). An NTP server can be specified.</td>
- </tr>
-<tr>
-  <td>DNS  	</td>
-  <td>Manages the DNS subsystem for the cluster </td>
- </tr>
-<tr>
-  <td>Logging 	</td>
-  <td>Centralized logging system based on syslog </td>
- </tr>
-<tr>
-  <td>Nagios	</td>
-  <td>System monitoring service for the cluster that can be used by other barclamps 
-</td>
- </tr>
-<tr>
-  <td>Ganglia  	</td>
-  <td>Performance monitoring service for the cluster that can be used by other barclamps </td>
- </tr>
-<tr>
-  <td>Test 	</td>
-  <td>Provides a shell for writing tests against </td>
- </tr>
+<table>
+<caption>Table 4.1: Barclamps</caption>
+	<tr>
+  		<th>Barclamp 						</th>
+  		<th>Function / Comments					</th>
+ 	</tr>
+	<tr>
+  		<td>Crowbar						</td>
+  		<td>The roles and recipes to set up the barclamp framework.  
+		References other barclamps.  Modify the default proposal to 
+		change the Usernames and passwords for access to the Crowbar UI.	</td>
+ 	</tr>
+	<tr>
+  		<td>Deployer  						</td>
+  		<td>Initial classification system for the Crowbar environment
+		 (aka the state machine) 					</td>
+ 	</tr>
+	<tr>
+  		<td>Provisioner						</td>
+  		<td>The roles and recipes to set up the provisioning server 
+		and a base environment for all nodes 				</td>
+ 	</tr>
+	<tr>
+  		<td>Network  						</td>
+  		<td>Instantiates network interfaces on the Crowbar managed systems.
+		 Also manages the address pool. 				</td>
+ 	</tr>
+	<tr>
+  		<td> RAID  						</td>
+  		<td>Sets up LSI RAID controllers in a variety of configurations.  
+		If missing, you can performed it manually.			</td>
+ 	</tr>
+	<tr>
+  		<td> BIOS  						</td>
+  		<td>Configures BIOS options for Dell PowerEdge C servers.  If 
+		missing, can be performed manually.				</td>
+ 	</tr>
+	<tr>
+  		<td>IPMI  						</td>
+  		<td>Allows management of the IP Management Interface (IPMI) on 
+		servers when the BMC network is enabled.			</td>
+ 	</tr>
+	<tr>
+  		<td>NTP  							</td>
+  		<td>Common NTP service for the cluster (required for secure access).
+		 An NTP server can be specified.				</td>
+ 	</tr>
+	<tr>
+  		<td>DNS  							</td>
+  		<td>Manages the DNS subsystem for the cluster			</td>
+ 	</tr>
+	<tr>
+  		<td>Logging 						</td>
+  		<td>Centralized logging system based on syslog 			</td>
+ 	</tr>
+	<tr>
+  		<td>Nagios						</td>
+  		<td>System monitoring service for the cluster that can be used 
+		by other barclamps 						</td>
+ 	</tr>
+	<tr>
+  		<td>Ganglia  						</td>
+  		<td>Performance monitoring service for the cluster that can be
+		 used by other barclamps 					</td>
+ 	</tr>
+	<tr>
+  		<td>Test 							</td>
+  		<td>Provides a shell for writing tests against 			</td>
+ 	</tr>
 
 </table>
 
@@ -980,56 +989,59 @@ The main post-installation function is to provide the main transition entry poin
 
 
 <a id="table-Default-Network-Addresses" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.2: Crowbar Barclamp Parameters</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>barclamps 			</td>
-  <td>A list of all barclamps we ship.	</td>
-  <td>A list of supported barclamps. This is not used in the product currently. </td>
- </tr>
-<tr>
-  <td>instances 		</td>
-  <td>The starting barclamps using their default configurations.</td>
-  <td>A map of barclamp names that reference a list of json files (default is special to mean to take the defaults) that represent starting barclamp instances to create. 
-</td>
- </tr>
-<tr>
-  <td>run_order</td>
-  <td>A map of barclamp names to integer priorities. </td>
-  <td>The map is used to define the order that the barclamps are called when handling a transition request. lower is higher priority. Unspecified items are assumed to have a priority of 100. </td>
- </tr>
-<tr>
-  <td>users </td>
-  <td>A map of users - containing Crowbar. 
-</td>
-  <td>This map defines the users allowed to access Crowbar's UI and REST API. 
-</td>
- </tr>
+<table>
+<caption>Table 4.2: Crowbar Barclamp Parameters</caption>
+	<tr>
+  		<th>Name 							</th>
+  		<th>Default 						</th>
+  		<th>Description 						</th>
+	</tr>
+	<tr>
+  		<td>barclamps 						</td>
+  		<td>A list of all barclamps we ship.				</td>
+  		<td>A list of supported barclamps. This is not used in the 
+		product currently. 						</td>
+ 	</tr>
+	<tr>
+  		<td>instances 						</td>
+  		<td>The starting barclamps using their default configurations.	</td>
+  		<td>A map of barclamp names that reference a list of json files
+		 (default is special to mean to take the defaults) that represent
+		 starting barclamp instances to create. 			</td>
+ 	</tr>
+	<tr>
+  		<td>run_order						</td>
+  		<td>A map of barclamp names to integer priorities. 		</td>
+  		<td>The map is used to define the order that the barclamps are
+		 called when handling a transition request. lower is higher
+		 priority. Unspecified items are assumed to have a priority of 100. 	</td>
+ 	</tr>
+	<tr>
+  		<td>users				 			</td>
+  		<td>A map of users - containing Crowbar. 			</td>
+  		<td>This map defines the users allowed to access Crowbar's
+		 UI and REST API. 						</td>
+ 	</tr>
 </table>
 
 The users map contains a map. The key is the user name and the rest of the required 
 fields are: 
 
 <a id="table-User-Name-Key" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.3: User Name Key</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>password 			</td>
-  <td>Clear text password of the user 	</td>  
-</tr>
-<tr>
-  <td>description 			</td>
-  <td>A description of the user. 	</td>  
-</tr>
+<table>
+<caption>Table 4.3: User Name Key</caption>
+	<tr>
+  		<th>Name 							</th>
+  		<th>Description 						</th>
+	</tr>
+	<tr>
+  		<td>password 						</td>
+  		<td>Clear text password of the user 				</td>  
+	</tr>
+	<tr>
+  		<td>description 						</td>
+  		<td>A description of the user. 				</td>  
+	</tr>
 </table>
 
 <a id="Deployer-Barclamp"/>
@@ -1046,41 +1058,45 @@ The Deployer is also responsible for manipulating the run-list during the hardwa
 The Deployer also controls the allocate flag on the node. The allocate flag is used to pause the node during after discovery. The node waits for it to be allocated to contain. The Deployer has a configuration option to indicate if the allocate flag should be set to false (and cause a pause) or just allocate all nodes. 
 
 <a id="table-Deployer-Barclamp-Parameters" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.4: Deployer Barclamp Parameters</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>bios_map	</td>
-  <td>A list of default settings for bios and raid for swift and nova.	</td>
-  <td>The map defines a list of patterns that would apply a configuration setting for bios and raid. </td>
- </tr>
-<tr>
-  <td>use_allocate 	</td>
-  <td>true 	</td>
-  <td>A Boolean value - true indicates that a pause should be injected after the discovered state to allow the admin to accept and allocate the node. 
-		</td>
- </tr>
+<table>
+<caption>Table 4.4: Deployer Barclamp Parameters</caption>
+	<tr>
+  		<th>Name 							</th>
+  		<th>Default 						</th>
+  		<th>Description 						</th>
+	</tr>
+	<tr>
+  		<td>bios_map						</td>
+  		<td>A list of default settings for bios and raid for swift and nova.	</td>
+  		<td>The map defines a list of patterns that would apply a
+		 configuration setting for bios and raid.		 	</td>
+ 	</tr>
+	<tr>
+  		<td>use_allocate 						</td>
+  		<td>true 	</td>
+  		<td>A Boolean value - true indicates that a pause should be injected
+		 after the discovered state to allow the admin to accept and
+		 allocate the node. 					</td>
+ 	</tr>
 </table>
 
 <a id="table-BIOS-Map-Entry-Keys" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.5: BIOS Map Entry Keys</small></big></b></caption>
-<tr>
-  <th>pattern 	</th>
-  <th>Regular expression applied to the role names on the node. </th>
-</tr>
-<tr>
-  <td>bios_set 	</td>
-  <td>The bios set of parameters to apply. Values are: Virtualization or Storage. </td>
- </tr>
-<tr>
-  <td>raid_set 	</td>
-  <td>The raid set of parameters to apply. Values are: JBODOnly or SingeRaid10.</td>
- </tr>
+<table>
+<caption>Table 4.5: BIOS Map Entry Keys	</caption>
+	<tr>
+  		<th>pattern 						</th>
+  		<th>Regular expression applied to the role names on the node. 	</th>
+	</tr>
+	<tr>
+  		<td>bios_set 						</td>
+  		<td>The bios set of parameters to apply. Values are:
+		 Virtualization or Storage. 					</td>
+ 	</tr>
+	<tr>
+  		<td>raid_set 						</td>
+  		<td>The raid set of parameters to apply. 
+		Values are: JBODOnly or SingeRaid10.				</td>
+ 	</tr>
 </table>
 
 <a id="Provisioner-Barclamp"/>
@@ -1089,53 +1105,57 @@ The Deployer also controls the allocate flag on the node. The allocate flag is u
 The Provisioner provides the roles and recipes to set up the provisioning server and a base environment for all provisioned nodes. The Provisioner also provides the transition entry point for nodes that need to have DHCP transitions done. The Provisioner assumes that addressing is handled outside of this barclamp.
 
 <a id="table-Provisioner-Barclamp-Parameters" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.6: Provisioner Barclamp Parameters</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>default_user 	</td>
-  <td>crowbar 	</td>
-  <td>User to create for external login.</td>
- </tr>
-<tr>
-  <td>default_password 	</td>
-  <td>unset		</td>
-  <td>Clear text password to use for external login.</td>
- </tr>
-<tr>
-  <td>default_password_hash 	</td>
-  <td>Hash of crowbar 	</td>
-  <td>MD5 hash of password to use for external login. printf 'password' | mkpassed -s -m md5 will generate the hash. </td>
- </tr>
-<tr>
-  <td>web_port 	</td>
-  <td>8091 	</td>
-  <td>The default Web port that the repository web server uses.</td>
- </tr>
-<tr>
-  <td>use_local_security 	</td>
-  <td>true 		</td>
-  <td>This defaults the security updates path in the install to use the admin node instead of the internet. </td>
- </tr>
-<tr>
-  <td>dhcp </td>
-  <td>map </td>
-  <td>This is a map that contains the DHCP parameters (lease-time and state_machine).</td>
- </tr>
-<tr>
-  <td>lease-time 	</td>
-  <td>60 		</td>
-  <td>The number of seconds a DHCP lease is valid for the system.</td>
- </tr>
-<tr>
-  <td>state_machine </td>
-  <td>map 	</td>
-  <td>This is the state machine that DHCP server uses in this instance of the barclamp.</td>
- </tr>
+<table>
+<caption>Table 4.6: Provisioner Barclamp Parameters	</caption>
+	<tr>
+  		<th>Name 							</th>
+  		<th>Default 						</th>
+  		<th>Description 						</th>
+	</tr>
+	<tr>
+  		<td>default_user 						</td>
+  		<td>crowbar 						</td>
+  		<td>User to create for external login.				</td>
+ 	</tr>
+	<tr>
+  		<td>default_password 					</td>
+  		<td>unset							</td>
+  		<td>Clear text password to use for external login.		</td>
+ 	</tr>
+	<tr>
+  		<td>default_password_hash 					</td>
+  		<td>Hash of crowbar 					</td>
+  		<td>MD5 hash of password to use for external login. printf
+		 'password' | mkpassed -s -m md5 will generate the hash. 		</td>
+ 	</tr>
+	<tr>
+  		<td>web_port 						</td>
+  		<td>8091 							</td>
+  		<td>The default Web port that the repository web server uses.	</td>
+ 	</tr>
+	<tr>
+  		<td>use_local_security 					</td>
+  		<td>true 							</td>
+  		<td>This defaults the security updates path in the install to use
+		 the admin node instead of the internet. 			</td>
+ 	</tr>
+	<tr>
+  		<td>dhcp 							</td>
+  		<td>map 							</td>	
+  		<td>This is a map that contains the DHCP parameters
+		 (lease-time and state_machine).				</td>
+ 	</tr>
+	<tr>
+  		<td>lease-time 						</td>
+  		<td>60 							</td>
+  		<td>The number of seconds a DHCP lease is valid for the system.	</td>
+ 	</tr>
+	<tr>
+  		<td>state_machine 						</td>
+  		<td>map 							</td>
+  		<td>This is the state machine that DHCP server uses in this
+		 instance of the barclamp.					</td>
+ 	</tr>
 </table>
 
 > #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") While neither is required, one of default_password or default_password_hash is required.
@@ -1152,150 +1172,161 @@ The network assignment function is handled by the creation of an API extension o
 Modification of the following parameters should only be done at install time.
 
 <a id="table-Network-Configuration-Options" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.7: Network Configuration Options</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>mode 	</td>
-  <td>single 	</td>
-  <td>A string value of either single, dual, or team. This specifies the default network interface construction model.</td>
- </tr>
-<tr>
-  <td>teaming 	</td>
-  <td>map 	</td>
-  <td>A map of values specific to teaming.</td>
- </tr>
-<tr>
-  <td>networks 	</td>
-  <td>map 	</td>
-  <td>A map of networks that this barclamp should manage.</td>
- </tr>
+<table>
+<caption>Table 4.7: Network Configuration Options</caption>
+	<tr>
+  		<th>Name 							</th>
+  		<th>Default 						</th>
+  		<th>Description 						</th>
+	</tr>
+	<tr>
+  		<td>mode 							</td>
+  		<td>single 						</td>
+  		<td>A string value of either single, dual, or team. This specifies
+		 the default network interface construction model.		</td>
+ 	</tr>
+	<tr>
+  		<td>teaming 						</td>
+  		<td>map 							</td>
+ 	 	<td>A map of values specific to teaming.			</td>
+ 	</tr>
+	<tr>
+  		<td>networks 						</td>
+  		<td>map 							</td>
+  		<td>A map of networks that this barclamp should manage.		</td>
+ 	</tr>
 </table>
 
 <a id="table-Teaming-Sub-Parameters" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.8: Teaming Sub-Parameters</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>mode 	</td>
-  <td>6 		</td>
-  <td>The default teaming algorithm to use for the bonding driver in Linux.</td>
- </tr>
-
+<table>
+<caption>Table 4.8: Teaming Sub-Parameters	</caption>
+	<tr>
+  		<th>Name 							</th>
+  		<th>Default 						</th>
+  		<th>Description 						</th>
+	</tr>
+	<tr>
+  		<td>mode 							</td>
+  		<td>6 							</td>
+  		<td>The default teaming algorithm to use for the
+		 bonding driver in Linux.					</td>
+ 	</tr>
 </table>
 
 <a id="table-Default-Networks" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.9: Default Networks</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>admin 	</td>
-  <td>Private network for node to node communication </td>
-  <td>A router, if wanted, is external to the system. This network must be owned by the Crowbar system to run DHCP. </td>
- </tr>
-<tr>
-  <td>bmc 	</td>
-  <td>Private network for bmc communication </td>
-  <td>This can be the same as the admin network by using the ranges to limit what IP goes where. A router, if wanted, is external to the system. </td>
- </tr>
-<tr>
-  <td>bmc_vlan 	</td>
-  <td>Private network for admin nodes on the bmc network </td>
-  <td>This must be the same as the BMC network and have the same VLAN. This is used to generate a vlan tagged interface on the admin nodes that can access the BMC LAN. </td>
- </tr>
-<tr>
-  <td>storage 	</td>
-  <td>Private network for storage traffic </td>
-  <td>A router, if wanted, is external to the system.</td>
- </tr>
-<tr>
-  <td>public 	</td>
-  <td>Public network for Crowbar and other components </td>
-  <td>A router, if wanted, is external to the system. </td>
- </tr>
+<table>
+<caption>Table 4.9: Default Networks</caption>
+	<tr>
+  		<th>Name 							</th>
+  		<th>Default 						</th>
+  		<th>Description 						</th>
+	</tr>
+	<tr>
+  		<td>admin 						</td>
+  		<td>Private network for node to node communication 		</td>
+  		<td>A router, if wanted, is external to the system. This network
+		 must be owned by the Crowbar system to run DHCP. 		</td>
+ 	</tr>
+	<tr>
+  		<td>bmc 							</td>
+  		<td>Private network for bmc communication 			</td>
+  		<td>This can be the same as the admin network by using the ranges
+		 to limit what IP goes where. A router, if wanted, is external
+		 to the system. 						</td>
+ 	</tr>
+	<tr>
+  		<td>bmc_vlan 						</td>
+  		<td>Private network for admin nodes on the bmc network 		</td>
+  		<td>This must be the same as the BMC network and have the
+		 same VLAN. This is used to generate a vlan tagged interface
+		 on the admin nodes that can access the BMC LAN. 			</td>
+ 	</tr>
+	<tr>
+  		<td>storage 						</td>
+  		<td>Private network for storage traffic 			</td>
+  		<td>A router, if wanted, is external to the system.		</td>
+ 	</tr>
+	<tr>
+  		<td>public 						</td>
+  		<td>Public network for Crowbar and other components 		</td>
+  		<td>A router, if wanted, is external to the system. 		</td>
+ 	</tr>
 </table>
 
 <a id="table-Network-Parameters" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.10: Network Parameters</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>vlan 	</td>
-  <td>Integer 	</td>
-  <td>The VLAN to use on the switch and interfaces for this network </td>
- </tr>
-<tr>
-  <td>use_vlan 	</td>
-  <td>true 	</td>
-  <td>A value of true indicates that the VLAN should apply to the interface. A value of false assumes that the node receives untagged traffic for this network. 
-</td>
- </tr>
-<tr>
-  <td>add_bridge </td>
-  <td>false 	</td>
-  <td>Indicates if the network should have a bridge built on top of it. The bridge will be br. This is mostly for Nova compute.</td>
- </tr>
-<tr>
-  <td>subnet 	</td>
-  <td>IP Address </td>
-  <td>The subnet for this network.</td>
- </tr>
-<tr>
-  <td>netmask 	</td>
-  <td>Netmask	</td>
-  <td>The netmask for this network. </td>
- </tr>
-<tr>
-  <td>router 	</td>
-  <td>IP Address </td>
-  <td>The default router for this network.</td>
- </tr>
-<tr>
-  <td>broadcast	</td>
-  <td>IP Address 	</td>
-  <td>The default broadcast address for this network.</td>
- </tr>
-<tr>
-  <td>ranges 	</td>
-  <td>map 	</td>
-  <td>This contains a map of strings to start and stop values for network. This allows for sub-ranges with the network for specific uses. For example: DHCP, admin, BMC, hosts. </td>
- </tr>
+<table>
+<caption>Table 4.10: Network Parameters	</caption>
+	<tr>
+  		<th>Name 							</th>
+  		<th>Default 						</th>
+  		<th>Description 						</th>
+	</tr>
+	<tr>
+  		<td>vlan 							</td>
+  		<td>Integer 						</td>
+  		<td>The VLAN to use on the switch and interfaces for this network 	</td>
+ 	</tr>
+	<tr>
+  		<td>use_vlan 						</td>
+  		<td>true 							</td>
+  		<td>A value of true indicates that the VLAN should apply to the
+		 interface. A value of false assumes that the node receives
+		 untagged traffic for this network. 				</td>
+ 	</tr>
+	<tr>
+  		<td>add_bridge 						</td>
+  		<td>false 						</td>
+  		<td>Indicates if the network should have a bridge built on top
+		 of it. The bridge will be br. This is mostly for Nova compute.	</td>
+ 	</tr>
+	<tr>
+  		<td>subnet 						</td>
+  		<td>IP Address 						</td>
+  		<td>The subnet for this network.				</td>
+ 	</tr>
+	<tr>
+  		<td>netmask 						</td>
+  		<td>Netmask						</td>
+  		<td>The netmask for this network. 				</td>
+ 	</tr>
+	<tr>
+  		<td>router 						</td>
+  		<td>IP Address 						</td>
+  		<td>The default router for this network.			</td>
+ 	</tr>
+	<tr>
+  		<td>broadcast						</td>
+  		<td>IP Address 						</td>
+  		<td>The default broadcast address for this network.		</td>
+ 	</tr>
+	<tr>
+  		<td>ranges 						</td>
+  		<td>map 							</td>
+  		<td>This contains a map of strings to start and stop
+		 values for network. This allows for sub-ranges with
+		 the network for specific uses. For example: DHCP, 
+		admin, BMC, hosts. 						</td>
+ 	</tr>
 </table>
 
 <a id="table-Range-Map-String-Key" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.11: Range Map String Key</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>start 				</td>
-  <td>IP Address 				</td>
-  <td>First address in the range, inclusive.	</td>
- </tr>
-<tr>
-  <td>end 				</td>
-  <td>IP Address 				</td>
-  <td>Last address in the range, inclusive.	</td>
- </tr>
+<table>
+<caption>Table 4.11: Range Map String Key</caption>
+	<tr>
+  		<th>Name 							</th>
+  		<th>Default 						</th>
+  		<th>Description 						</th>
+	</tr>
+	<tr>
+  		<td>start 						</td>
+  		<td>IP Address 						</td>
+  		<td>First address in the range, inclusive.			</td>
+ 	</tr>
+	<tr>
+  		<td>end 							</td>
+  		<td>IP Address 						</td>
+  		<td>Last address in the range, inclusive.			</td>
+ 	</tr>
 
 </table>
 
@@ -1347,33 +1378,33 @@ The BIOS barclamp provides the following specific control features:
 The IPMI barclamp configures IPMI access on platforms that support it. Specifically it configures: 
 
 <a id="table-Default-Network-Addresses" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4-12: IPMI Barclamp Parameters</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>bmc_enable 					</td>
-  <td>true					</td>
-  <td>Controls if the barclamp attempts to work on the BMC. </td>
- </tr>
-<tr>
-  <td>bmc_password					</td>
-  <td>crowbar					</td>
-  <td>The password which will be configured on the BMC	</td>
- </tr>
-<tr>
-  <td>bmc_user					</td>
-  <td>crowbar					</td>
-  <td>The username which will be configured on the BMC	</td>
- </tr>
-<tr>
-  <td>debug 					</td>
-  <td>true					</td>
-  <td>turns on more verbose output.			</td>
- </tr>
+<table>
+<caption>Table 4-12: IPMI Barclamp Parameters</caption>
+	<tr>
+  		<th>Name 						</th>
+  		<th>Default 					</th>
+  		<th>Description 					</th>
+	</tr>
+	<tr>
+  		<td>bmc_enable 					</td>
+  		<td>true						</td>
+  		<td>Controls if the barclamp attempts to work on the BMC. 	</td>
+ 	</tr>
+	<tr>
+  		<td>bmc_password					</td>
+  		<td>crowbar					</td>
+  		<td>The password which will be configured on the BMC	</td>
+ 	</tr>
+	<tr>
+  		<td>bmc_user					</td>
+  		<td>crowbar					</td>
+  		<td>The username which will be configured on the BMC	</td>
+ 	</tr>
+	<tr>
+  		<td>debug 					</td>
+  		<td>true						</td>
+  		<td>turns on more verbose output.			</td>
+ 	</tr>
 </table>
 
 <a id="NTP-Barclamp"/>
@@ -1382,23 +1413,28 @@ The IPMI barclamp configures IPMI access on platforms that support it. Specifica
 The NTP Barclamp provides a common NTP service for the cluster. You can specify an NTP server or servers and all other nodes are clients of them.
 
 <a id="table-NTP-Barclamp-Parameters" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.13: NTP Barclamp Parameters</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>external_servers 	</td>
-  <td>empty list 		</td>
-  <td>A list of IP addresses or hostnames that should be used as external NTP servers. Hostname can be used if the DNS barclamp is configured to have access to an external resolver. 		</td>
- </tr>
-<tr>
-  <td>admin_ip_eval		</td>
-  <td>"Chef::Recipe::Barclamp::Inventory.get_network_by_type(node, \"admin\").address" 			</td>
-  <td>The ruby eval expression that returns the admin IP address of a node. 					</td>
- </tr>
+<table>
+<caption>Table 4.13: NTP Barclamp Parameters	</caption>
+	<tr>
+  		<th>Name 						</th>
+  		<th>Default 					</th>
+  		<th>Description 					</th>
+	</tr>
+	<tr>
+  		<td>external_servers 				</td>
+  		<td>empty list 					</td>
+  		<td>A list of IP addresses or hostnames that should be
+		 used as external NTP servers. Hostname can be used if
+		 the DNS barclamp is configured to have access to an
+		 external resolver. 				</td>
+ 	</tr>
+	<tr>
+  		<td>admin_ip_eval					</td>
+  		<td>"Chef::Recipe::Barclamp::Inventory.
+		get_network_by_type(node, \"admin\").address" 		</td>
+  		<td>The ruby eval expression that returns the admin
+		 IP address of a node. 				</td>
+	</tr>
 </table>
 
 > #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") If you are setting up an external server it can take up to 5 minutes for the nodes to sync with the server.  Systems should not be rebooted during this process.  If systems are rebooted they pause as the sync occurs.
@@ -1409,19 +1445,19 @@ The NTP Barclamp provides a common NTP service for the cluster. You can specify 
 The Logging Barclamp provides a centralized logging system based on syslog. The barclamp enables a centralized log server that can then forward information to external syslog servers. The Crowbar install process sends logs to the admin node by default, but the configuration from the logging barclamp overrides this initial configuration.
 
 <a id="table-Logging-Barclamp-Configuration-Parameters" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.14: Logging Barclamp Configuration Parameters</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>External_servers	</td>
-  <td>Empty list		</td>
-  <td>A list of IP addresses for the logging-server to which to forward logs.					</td>
- </tr>
-
+<table>
+<caption>Table 4.14: Logging Barclamp Configuration Parameters</caption>
+	<tr>
+  		<th>Name 						</th>
+  		<th>Default 					</th>
+  		<th>Description 					</th>
+	</tr>
+	<tr>
+  		<td>External_servers				</td>
+  		<td>Empty list					</td>
+  		<td>A list of IP addresses for the logging-server
+		 to which to forward logs.				</td>
+ 	</tr>
 </table>
 
 <a id="Nagios-Barclamp"/>
@@ -1430,27 +1466,29 @@ The Logging Barclamp provides a centralized logging system based on syslog. The 
 The Nagios barclamp provides a common Nagios service for the cluster. A Nagios server or servers can be specified and all other nodes are clients of them. The barclamp attempts to direct all traffic over the admin network.
 
 <a id="table-Nagios-Barclamp-Parameters" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.15: Nagios Barclamp Parameters</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>admin_interface_eval 						</td>
-  <td>Chef::Recipe::Barclamp::Inventory.get_network_by_type(node, \"admin\").interface 								</td>
-  <td>The ruby eval expression that returns the admin interface of the node. 	</td>
- </tr>
-<tr>
-  <td>admin_ip_eval 						</td>
-  <td>"Chef::Recipe::Barclamp::Inventory.get_network_by_type(node, \"admin\").address" 
-								</td>
-  <td>The ruby eval expression that returns the admin IP address of a node. 	</td>
- </tr>
+<table>
+<caption>Table 4.15: Nagios Barclamp Parameters	</caption>
+	<tr>
+  		<th>Name 						</th>
+  		<th>Default 					</th>
+  		<th>Description 					</th>
+	</tr>
+	<tr>
+  		<td>admin_interface_eval 				</td>
+  		<td>Chef::Recipe::Barclamp::Inventory.get_network_by_type
+		(node, \"admin\").interface 				</td>
+  		<td>The ruby eval expression that returns the admin
+		 interface of the node. 				</td>
+ 	</tr>
+	<tr>
+  		<td>admin_ip_eval 					</td>
+  		<td>"Chef::Recipe::Barclamp::Inventory.
+		get_network_by_type(node, \"admin\").address" 		</td>
+  		<td>The ruby eval expression that returns the admin
+		 IP address of a node. 				</td>
+ 	</tr>
 </table>
 
-<br> 
 
 <a id="Ganglia-Barclamp"/>
 ##Ganglia Barclamp
@@ -1458,20 +1496,20 @@ The Nagios barclamp provides a common Nagios service for the cluster. A Nagios s
 The Ganglia barclamp provides a common Ganglia service for the cluster. Ganglia server or servers can be specified and all other nodes are clients of them.
 
 <a id="table-Ganglia-Barclamp-Parameters" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4.17: Ganglia Barclamp Parameters.</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Default 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>interface_eval		</td>
-  <td>Chef::Recipe::Barclamp::Inventory.get_network_by_type(node, \"admin\").interface 				</td>
-  <td>The ruby evaluation string that gets the interface of the admin interface. 
-				</td>
- </tr>
-
+<table>
+<caption>Table 4.17: Ganglia Barclamp Parameters.	</caption>		
+	<tr>
+  		<th>Name 						</th>
+  		<th>Default 					</th>
+  		<th>Description 					</th>
+	</tr>
+	<tr>
+  		<td>interface_eval					</td>
+  		<td>Chef::Recipe::Barclamp::Inventory.
+		get_network_by_type(node, \"admin\").interface 		</td>
+  		<td>The ruby evaluation string that gets the interface
+		 of the admin interface. 				</td>
+ 	</tr>
 </table>
 
 <a id="Test-Barclamp"/>
@@ -1480,23 +1518,25 @@ The Ganglia barclamp provides a common Ganglia service for the cluster. Ganglia 
 The Test barclamp provides a shell for writing tests against. It allows for failures to be injected and other barclamps can be validated against it.
 
 <a id="table-Test-Barclamp-Parameters" />
-<table border="1" cellspacing="0">
-<caption><big><b><small>Table 4-18: Test Barclamp Parameters</small></big></caption>
-<tr>
-  <th>Name 	</th>
-  <th>Description 	</th>
-</tr>
-<tr>
-  <td>barclamps 	</td>
-  <td>A list of supported barclamps that are used as the return value for the barclamp list API call </td>
-</tr>
-<tr>
-  <td>instances	</td>
-  <td>A map of barclamp names that reference a list of json files (default is special to mean to take the defaults) that represent starting barclamp instances to create 			</td>
-</tr>
+<table>
+<caption>Table 4-18: Test Barclamp Parameters	</caption>
+	<tr>
+  		<th>Name 						</th>
+  		<th>Description 					</th>
+	</tr>
+	<tr>
+  		<td>barclamps 					</td>
+  		<td>A list of supported barclamps that are used as the
+		 return value for the barclamp list API call 		</td>
+	</tr>
+	<tr>
+  		<td>instances					</td>
+  		<td>A map of barclamp names that reference a list of
+		 json files (default is special to mean to take the
+		 defaults) that represent starting barclamp instances
+		 to create 					</td>
+	</tr>
 </table>
-
-<br>
 
 -------------------------
 <a id="Supplemental-Material"/>
