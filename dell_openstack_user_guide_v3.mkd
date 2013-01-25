@@ -153,7 +153,7 @@
 <a id="Introduction"/>
 #Introduction
 -----------------------------------
-This document provides instructions you for operating Crowbar.  Please refer to additional user guide for specific products that are deployed by Crowbar such as OpenStack<sup><small>TM</small></sup> or Apache<sup><small>TM</small></sup> Hadoop<sup><small>TM</small></sup>.   
+This document provides instructions you for operating Crowbar.  Please refer to additional user guide for specific products that are deployed by Crowbar such as OpenStack&trade; or Apache&trade; Hadoop&trade;.   
 
 <a id="Concepts"/>
 ##Concepts##
@@ -1128,7 +1128,7 @@ The Provisioner provides the roles and recipes to set up the provisioning server
  </tr>
 </table>
 
-#####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") While neither is required, one of default_password or default_password_hash is required.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") While neither is required, one of default_password or default_password_hash is required.
 
 <a id="Network-Barclamp"/>
 ##Network Barclamp
