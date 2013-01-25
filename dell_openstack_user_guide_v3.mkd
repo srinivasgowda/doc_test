@@ -293,39 +293,49 @@ The default networks are presented in the following table.  These defaults can b
 
 <a id="table-Default-Networks" />
 <table border="1" cellspacing="0">
-<caption><big><b><small>Table 1.1: Default Networks</small></big></caption>
-<tr>
-  <th>Usage 			</th>
-  <th>Description			</th>
-  <th>Default
- reserved vLAN tag 	</th>
-  <th>Tagged 			</th>
-</tr>
-<tr>
-  <td>Admin/Internal vLAN		</td>
-  <td>Used for administrative functions such as Crowbar node installation, TFTP booting, DHCP assignments, KVM, system logs, backups, and other monitoring. There is only one vLAN set up for this function and it is spanned across the entire network.					</td>
-  <td>100				</td>
-  <td>Not tagged			</td>
-</tr>
-<tr>
-  <td>BMC vLAN			</td>
-  <td>Used for connecting to the BMC of each node. 
-				</td>
-  <td>100				</td>
-  <td>Not tagged			</td>
-</tr>
-<tr>
-  <td>Storage vLAN			</td>
-  <td>Used by the Swift storage system for replication of data between machines, monitoring of data integrity, and other storage specific functions (802.1q Tagged).					</td>
-  <td>200				</td>
-  <td>Tagged			</td>
-</tr>
-<tr>
-  <td>Edge/External vLANs		</td>
-  <td>sed for connections to devices external to the Cloud infrastructure; these include externally visible services such as load balancers and web servers. Use one or many of these networks, dependent on the need to segregate traffic among groups of servers (802.1q Tagged).		</td>
-  <td>300				</td>
-  <td>Tagged			</td>
-</tr>
+<caption>Table 1.1: Default Networks</caption>
+	<tr>
+		<th>Usage 				</th>
+		<th>Description				</th>
+		<th>Default reserved vLAN tag 		</th>
+		<th>Tagged 				</th>
+	</tr>
+	<tr>
+		<td>Admin/Internal vLAN			</td>
+		<td>Used for administrative functions such as
+		 Crowbar node installation, TFTP booting, DHCP 
+		assignments, KVM, system logs, backups, and other 
+		monitoring. There is only one vLAN set up for 
+		this function and it is spanned across the 
+		entire network.				</td>
+		<td>100					</td>
+  		<td>Not tagged				</td>
+	</tr>
+	<tr>
+ 		<td>BMC vLAN				</td>
+  		<td>Used for connecting to the BMC of each node. 	</td>
+  		<td>100					</td>
+  		<td>Not tagged				</td>
+	</tr>
+	<tr>
+  		<td>Storage vLAN				</td>
+  		<td>Used by the Swift storage system for replication of 
+		data between machines, monitoring of data integrity,and 
+		other storage specific functions (802.1q Tagged).	</td>
+  		<td>200					</td>
+  		<td>Tagged				</td>
+	</tr>
+	<tr>
+  		<td>Edge/External vLANs			</td>
+  		<td>sed for connections to devices external to the 
+		Cloud infrastructure; these include externally visible 
+		services such as load balancers and web servers. Use 
+		one or many of these networks, dependent on the need 
+		to segregate traffic among groups of servers 
+		(802.1q Tagged).				</td>
+  		<td>300					</td>
+  		<td>Tagged				</td>
+	</tr>
 </table>
 
 > #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") The admin and BMC networks are expected to be in the same L2 network.
