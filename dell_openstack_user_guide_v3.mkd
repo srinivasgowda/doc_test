@@ -12,11 +12,11 @@
 
 ##Notes, Cautions, and Warnings
 
-> #####![notes.png](http://localhost/notes.png "notes.png") A NOTE indicates important information that helps you make better use of your system.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") A NOTE indicates important information that helps you make better use of your system.
 
-> #####![caution.png](http://localhost/caution.png "caution.png") A CAUTION indicates potential damage to hardware or loss of data if instructions are not followed.
+> #####![caution.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/caution.png "caution.png") A CAUTION indicates potential damage to hardware or loss of data if instructions are not followed.
 
-> #####![warning.png](http://localhost/warning.png "warning.png") A WARNING indicates a potential for property damage, personal injury, or death.
+> #####![warning.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/warning.png "warning.png") A WARNING indicates a potential for property damage, personal injury, or death.
 
 ----------------------------------------------
 
@@ -160,14 +160,14 @@ This document provides instructions you for operating Crowbar.  Please refer to 
 The purpose of this guide is to explain the user interface of Crowbar.  Use the Crowbar User Guide for assistance with installing Crowbar and configuring the target system.
 
 
-> #####![notes.png](http://localhost/notes.png "notes.png") Concepts beyond the scope of this guide will be introduced as needed in notes and references to other documentation.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") Concepts beyond the scope of this guide will be introduced as needed in notes and references to other documentation.
 
 <a id="Opscode-Chef-Server"/> 
 ##Opscode Chef Server##
 Crowbar makes extensive use of Opscode Chef Server, <http://opscode.com>. To explain Crowbar actions, you should understand the underlying Chef implementation.  
 
 
-> #####![chef.png](http://localhost/chef.png "chef.png") To use Crowbar, it is not necessary to log into the Chef Server; consequently, use of the Chef UI is not covered in this guide.  Supplemental information about Chef is included.
+> #####![chef.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/chef.png "chef.png") To use Crowbar, it is not necessary to log into the Chef Server; consequently, use of the Chef UI is not covered in this guide.  Supplemental information about Chef is included.
 This guide provides this additional Chef information as notes flagged with the Opscode logo.  
 
 ----------------------------------
@@ -176,7 +176,7 @@ This guide provides this additional Chef information as notes flagged with the O
 ##Dell Specific Options##
 The Dell EULA version of Crowbar provides additional functionality and color pallets than the open source version.  When divergences are relevant, they are identified.
 
-> #####![Dell.jpg](http://localhost/Dell.jpg "Dell.jpg") To perform some configuration options and provide some integration, we use libraries that cannot be distributed using open source. 
+> #####![Dell.jpg](https://raw.github.com/srinivasgowda/doc_test/master/pics/Dell.jpg "Dell.jpg") To perform some configuration options and provide some integration, we use libraries that cannot be distributed using open source. 
 
 Crowbar is not limited to managing Dell servers and components.  Due to driver requirements, some barclamps, for example: BIOS & RAID, must be targeted to specific hardware; however, those barclamps are not required for system configuration.
 
@@ -283,7 +283,7 @@ The Crowbar network configuration can be customized to better map to site specif
 
 Please refer to the Network Barclamp section for specific details.
 
-> #####![notes.png](http://localhost/notes.png "notes.png") Networks for the environment are configured when the crowbar installation is performed.  They cannot be changed without re-installing crowbar.  For specific information on how to configure the network JSON file please see the Deployment Guide.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") Networks for the environment are configured when the crowbar installation is performed.  They cannot be changed without re-installing crowbar.  For specific information on how to configure the network JSON file please see the Deployment Guide.
 
 
 <a id="Default-Networks"/>
@@ -328,7 +328,7 @@ The default networks are presented in the following table.  These defaults can b
 </tr>
 </table>
 
-> #####![notes.png](http://localhost/notes.png "notes.png") The admin and BMC networks are expected to be in the same L2 network.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") The admin and BMC networks are expected to be in the same L2 network.
 
 Each network defined in the system has the following parameters:
 
@@ -453,7 +453,7 @@ The IP address can be assigned in this fashion, using large subnets to support m
 </tr>
 </table>
 
-> #####![notes.png](http://localhost/notes.png "notes.png") Each network's ".1" address is reserved for the network gateway.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") Each network's ".1" address is reserved for the network gateway.
 
 <a id="User-Interface"/>
 #User Interface
@@ -465,7 +465,7 @@ The Crowbar interface has two primary concepts: nodes and barclamps.  All action
 
 Crowbar is delivered as a Web application available on the admin node using HTTP on port 3000.  By default, you can access it using <http://192.168.124.10:3000> (see table below).  Additionally, the default installation contains an implementation of Nagios and Ganglia for status and performance monitoring of the installation. 
  
-> #####![notes.png](http://localhost/notes.png "notes.png") Nagios, Ganglia and Chef can be accessed directly from a web browser or via selecting one of the links on the Dashboard in the Crowbar UI.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") Nagios, Ganglia and Chef can be accessed directly from a web browser or via selecting one of the links on the Dashboard in the Crowbar UI.
 
 <a id="table-Service-URLs" />
 <table border="1" cellspacing="0">
@@ -502,7 +502,7 @@ Crowbar is delivered as a Web application available on the admin node using HTTP
  </tr>
 </table>
 
-> #####![notes.png](http://localhost/notes.png "notes.png") Crowbar has been tested on the following browsers: FireFox 3.5+, FireFox 4.0, Internet Explorer 8, and Safari 5.  HTML5 compatibility and a minimum screen resolution of 1024x768 are recommended.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") Crowbar has been tested on the following browsers: FireFox 3.5+, FireFox 4.0, Internet Explorer 8, and Safari 5.  HTML5 compatibility and a minimum screen resolution of 1024x768 are recommended.
 
 The IP address (192.168.124.10) is the default address.  Replace it with the address assigned to the Admin node.
 
@@ -514,7 +514,7 @@ Crowbar has two primary concepts for users Nodes and Barclamps.  Before talking 
 
 Nodes represent distinct servers in your environment.  A server is a single operating system that can be physical or virtual with multiple NICs and HDDs.  Each server is identified uniquely by the MAC address of the NIC on the administrative network.
 
-> #####![chef.png](http://localhost/chef.png "chef.png") Crowbar nodes map directly to Chef nodes.  In fact, all data used in Crowbar is stored entirely in Chef.  Chef is the database for Crowbar.  Changing a node's data in Chef changes it in Crowbar.
+> #####![chef.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/chef.png "chef.png") Crowbar nodes map directly to Chef nodes.  In fact, all data used in Crowbar is stored entirely in Chef.  Chef is the database for Crowbar.  Changing a node's data in Chef changes it in Crowbar.
 
 <a id="Barclamps"/>
 ###Barclamps
@@ -525,7 +525,7 @@ Nodes represent distinct servers in your environment.  A server is a single oper
 
 * Once a proposal is reviewed, you must activate it before it becomes an Active in the system.
 
-> #####![chef.png](http://localhost/chef.png "chef.png") In addition to logic for Crowbar, barclamps are decomposed in Chef as multiple components: Crowbar data bag entries, cookbooks, recipes, and roles.  Our objective is to allow the Chef components used by Barclamps to operate in Chef even without Crowbar.
+> #####![chef.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/chef.png "chef.png") In addition to logic for Crowbar, barclamps are decomposed in Chef as multiple components: Crowbar data bag entries, cookbooks, recipes, and roles.  Our objective is to allow the Chef components used by Barclamps to operate in Chef even without Crowbar.
 
 Barclamps have a specific life cycle that is discussed in more detail as we explore the user interface.  Information about using, creating, and extending barclamps is included in the Supplemental Material section.
 
@@ -534,7 +534,7 @@ Barclamps have a specific life cycle that is discussed in more detail as we expl
 
 The menu for Crowbar is displayed on the upper right side of the page.  Clicking on one of the menu sections causes related content to display on the lower section of the screen.
 
-![general_layout.png](http://localhost/general_layout.png "general_layout.png") 
+![general_layout.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/general_layout.png "general_layout.png") 
 
 Alerts or confirmation messages may be displayed between the menu and the page content.  Most Crowbar screens automatically update state information so you should not have to refresh the page to get the most current information.
 
@@ -543,19 +543,19 @@ Alerts or confirmation messages may be displayed between the menu and the page c
 
 The Dashboard shows all the nodes in the system and lets you manipulate their power and configuration states.
 
-![node_layout.png](http://localhost/node_layout.png "Node layout") 
+![node_layout.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/node_layout.png "Node layout") 
 
 ###Node Switch Groups
 
 Nodes are shown organized by the physical switching infrastructure, which is discovered automatically during the configuration process.  Use the switch and port of each node's administrative network interface to determine groups and order within groups.
 
-> #####![notes.png](http://localhost/notes.png "notes.png") If you use a consistent pattern for connecting nodes to switches then the Crowbar display matches your nodes's physical location.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") If you use a consistent pattern for connecting nodes to switches then the Crowbar display matches your nodes's physical location.
 
 The top of the group box (red in illustration) shows the Switch MAC address and a pie chart of the nodes's status within each group.  Nodes (yellow in illustration) connected to the switch display in port order (lowest on top) with their current deployment state shown by the status light. 
 
 ####Table 2.2: Deployment States
 
-![Deployment States](http://localhost/deployment_status.png "Table 2.2: Deployment States")
+![Deployment States](https://raw.github.com/srinivasgowda/doc_test/master/pics/deployment_status.png "Table 2.2: Deployment States")
 
 The Admin node is the node that runs the Crowbar, Chef, and other core services.  It exists in the system before the user interface is available.
 
@@ -564,7 +564,7 @@ The Admin node is the node that runs the Crowbar, Chef, and other core services.
 
 Clicking on a node's name displays details about the selected node in the details panel (green in illustration).  The detail panel displays important information about the node including its FQDN, uptime, switch connectivity hardware profile, and a detailed list of all active network connections.
 
-> #####![chef.png](http://localhost/chef.png "chef.png") Node detail only shows a tiny fraction of the total details that Chef tracks for each node.  To see the complete list, examine the Run List and Attributes for each node in Chef.
+> #####![chef.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/chef.png "chef.png") Node detail only shows a tiny fraction of the total details that Chef tracks for each node.  To see the complete list, examine the Run List and Attributes for each node in Chef.
 
 The Links list is barclamp specific and expands depending on which barclamps are using the selected node.  Links open a new window to view additional information about the node.  The Barclamps and Roles lists indicate what capabilities have been assigned to the node.  
 
@@ -576,7 +576,7 @@ system.
 
 The Bulk Edit section has a much more detailed discussion of Barclamps and Roles.
 
-> #####![notes.png](http://localhost/notes.png "notes.png") If you allocate a node(s) then Crowbar will immediately begin to deploy it (them).  Allocation is a one way process.  You cannot “unallocate” a node.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") If you allocate a node(s) then Crowbar will immediately begin to deploy it (them).  Allocation is a one way process.  You cannot “unallocate” a node.
 
 The RAID and BIOS selections highlight the nodes’ current value using
 [brackets].  The choices offered for BIOS and RAID selectors are
@@ -587,7 +587,7 @@ installation.
 ##Barclamps
 The Barclamps page lets you create, edit, review and deploy proposals for Barclamps.  These activities are the way that Crowbar decides which nodes to deploy and how to configure them.
 
-> #####![notes.png](http://localhost/notes.png "notes.png") Previous versions of Crowbar split the Barclamp lifecycle into multiple pages.  All three phases of the lifecycle (barclamp, proposal, active role) are now represented together on the Barclamps page.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") Previous versions of Crowbar split the Barclamp lifecycle into multiple pages.  All three phases of the lifecycle (barclamp, proposal, active role) are now represented together on the Barclamps page.
 
 <a id="Barclamp-List"/>
 ###Barclamp List
@@ -598,7 +598,7 @@ A barclamp will show the status of the proposals that are attached to it using a
 
 ###Table 4.59: Proposal Status
 
-![proposal status](http://localhost/proposal_status.png) 
+![proposal status](https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status.png) 
 
 From the Barclamp list, you may take actions on the proposals based on
 their state as shown in the table above.  Please review the *Life Cycle*
@@ -616,7 +616,7 @@ descriptions are optional.  Clicking create will take you to the
 proposal editor (*details below*).  The create form will not be shown
 for barclamps that only allow a single proposal.
 
-> #####![notes.png](http://localhost/notes.png "notes.png") Naming for proposals is limited to lowercase letters and numbers only (not "spaces).  Capitalization is automatic for formatting only.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") Naming for proposals is limited to lowercase letters and numbers only (not "spaces).  Capitalization is automatic for formatting only.
 > #####This limitation is necessary because activated proposals are created as roles in Chef and follow a prescribed naming convention.
 
 > #####Crowbar stores barclamps in the Chef under the Crowbar data bag using bc-template-[barclamp]* as the naming pattern.   When a proposal is created, the instance copy is also stored in the Crowbar data bag.  Only active proposals have roles created for them. 
@@ -627,7 +627,7 @@ for barclamps that only allow a single proposal.
 
 Selecting a proposal from on the list navigates to the proposal details page.
 
-> #####![notes.png](http://localhost/notes.png "notes.png") If a proposal is active, you will be initially taken to a read only view of the proposal.  It is acceptable to edit an active proposal and re-apply.  To access the proposal editor from the read only view, click the edit button.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") If a proposal is active, you will be initially taken to a read only view of the proposal.  It is acceptable to edit an active proposal and re-apply.  To access the proposal editor from the read only view, click the edit button.
 
 Selecting the name of the proposal on the list opens the Edit Proposal page.  All proposals have two primary edit areas:  Attributes (yellow in figure) and Deployment.  Attributes are configurable data that is used by the Chef recipes.  Deployment is the Chef roles and nodes assigned to those roles.  
 
@@ -635,13 +635,13 @@ Since each barclamp has unique attributes and roles you should consult the docum
 
 Each barclamp may provide a custom editor for its attributes and node deployment information.  The typical custom editor lets you set attribute values using a form and drag and drop nodes from the available list (left column) into the roles associated with the barclamp (right, red on figure).  Each barclamp may have specific logic that requires minimum or maximums for node assignments.
 
-> #####![notes.png](http://localhost/notes.png "notes.png") While most barclamps coordinate with Chef to perform node deployments, Crowbar includes some special function barclamps that can be used to change how Crowbar operates.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") While most barclamps coordinate with Chef to perform node deployments, Crowbar includes some special function barclamps that can be used to change how Crowbar operates.
   
 If the barclamp does not have customer editor or your browser does not support the editor, Crowbar automatically uses a raw JSON editor.  You can also use this view if you want to see the entire configuration details.  Selecting the Raw view option on the right side of the Attributes or Deployment panel opens the JSON editor for that section.  This option lets you directly edit the JSON configuration details for the proposal.  This option is typically used when developing new barclamps or for advanced users only.
 
 When you have finished editing the proposal, you may save or apply it.  Save retains your configuration settings.  Apply save and then applies your proposal so that Crowbar to begin deploying the barclamp on the selected nodes.  Deleting a proposal removes it from the system and you lose your configuration.
 
-> #####![notes.png](http://localhost/notes.png "notes.png") If you attempt to apply a proposal that does not have sufficient nodes then Crowbar shows that proposal as queued.  This is likely to happen if you select nodes that have not been allocated.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") If you attempt to apply a proposal that does not have sufficient nodes then Crowbar shows that proposal as queued.  This is likely to happen if you select nodes that have not been allocated.
 
 > ##### When you apply a proposal, Crowbar creates Chef roles, and then puts them into the run list of the selected nodes.
  
@@ -650,7 +650,7 @@ When you have finished editing the proposal, you may save or apply it.  Save ret
 Deployment Functions section has a much more detailed discussion of
 Barclamps and Roles.
 
-> #####![notes.png](http://localhost/notes.png "notes.png") When a role or barclamp is selected in the details panel, the nodes that share the same barclamp or role are highlighted in the group panel.  This helps quickly identify groups of nodes that are similarly configured.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") When a role or barclamp is selected in the details panel, the nodes that share the same barclamp or role are highlighted in the group panel.  This helps quickly identify groups of nodes that are similarly configured.
 
 The buttons on the top of the details panel (Identify, Power On, Shutdown and Reboot) use the node's IPMI interface to change the node's physical state.  These states cause the node status to be unknown. These buttons are only available if the system is able to successfully configure the BMC on the target system.
 
@@ -734,7 +734,7 @@ The buttons on the bottom of the details panel (Delete, Reset, Reinstall and Har
 
 Using the Edit link (after the node name in the top left) lets you make per node decisions about how the node is deployed.
 
-> #####![notes.png](http://localhost/notes.png "notes.png") You must allocate the node to let Crowbar complete the deployment group panel. The allocate step acts as a pause state for deployment so that you have time choose a node's role in the system before Crowbar provisions it.  In addition, use it to simulate white listing.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") You must allocate the node to let Crowbar complete the deployment group panel. The allocate step acts as a pause state for deployment so that you have time choose a node's role in the system before Crowbar provisions it.  In addition, use it to simulate white listing.
 
 To Allocate a node, manually allocate the node from the edit page or you may include that node in an applied barclamp proposal.
 
@@ -744,9 +744,9 @@ To Allocate a node, manually allocate the node from the edit page or you may inc
 
 The Build Edit screen (added in v1.2) allows you to quickly update the description, RAID, BIOS, and allocation state for all the nodes in the system.
 
-![bulk_edit.png](http://localhost/bulk_edit.png) 
+![bulk_edit.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/bulk_edit.png) 
 
-> #####![notes.png](http://localhost/notes.png "notes.png") If you allocate a node(s) then Crowbar will immediately begin to deploy it (them).  Allocation is a one way process.  You cannot  "unallocate" a node.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") If you allocate a node(s) then Crowbar will immediately begin to deploy it (them).  Allocation is a one way process.  You cannot  "unallocate" a node.
 
 The RAID and BIOS selections highlight the nodes's current value using [brackets].  The choices offered for BIOS and RAID selectors are determined by the Bios and Raid Barclamps.  They can be expanded after installation.
 
@@ -755,9 +755,9 @@ If no change it made then the node will not be updated.
 ##Barclamps
 The Barclamps page lets you create, edit, review and deploy proposals for Barclamps.  These activities are the way that Crowbar decides which nodes to deploy and how to configure them.
 
-![barclamp.png](http://localhost/barclamp.png) 
+![barclamp.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/barclamp.png) 
 
-> #####![notes.png](http://localhost/notes.png "notes.png") Previous versions of Crowbar split the Barclamp lifecycle into multiple pages.  All three phases of the lifecycle (barclamp, proposal, active role) are now represented together on the Barclamps page.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") Previous versions of Crowbar split the Barclamp lifecycle into multiple pages.  All three phases of the lifecycle (barclamp, proposal, active role) are now represented together on the Barclamps page.
 
 ###Barclamp List
 The Barclamps page shows a list of all available barclamps (see “Included Barclamps” table).  The barclamps are represented as the blue lines in the figure to the right.  Expanding a barclamp (by clicking) displays the associated proposals for the selected barclamp (red box in the figure).  You jump directly to the relevant proposal by clicking on its name under its barclamp.
@@ -766,7 +766,7 @@ A barclamp will show the status of the proposals that are attached to it using a
 
 ####Table 4.59: Proposal Status
 
-![proposal status](http://localhost/proposal_status.png) 
+![proposal status](https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status.png) 
 
 From the Barclamp list, you may take actions on the proposals based on their state as shown in the table above.  Please review the Life Cycle section for more information about the different proposal states.
 
@@ -774,9 +774,9 @@ All core barclamps automatically create proposals and do not allow users to crea
 
 To create a new proposal, expand the barclamp row to expose the create form for new proposal.  You must supply a name for the proposal but descriptions are optional.  Clicking create will take you to the proposal editor (details below).  The create form will not be shown for barclamps that only allow a single proposal.
 
-> #####![notes.png](http://localhost/notes.png "notes.png")     Naming for proposals is limited to lowercase letters and numbers only (not "spaces).  Capitalization is automatic for formatting only.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png")     Naming for proposals is limited to lowercase letters and numbers only (not "spaces).  Capitalization is automatic for formatting only.
 
-> #####![chef.png](http://localhost/chef.png "chef.png") This limitation is necessary because activated proposals are created as roles in Chef and follow a prescribed naming convention.
+> #####![chef.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/chef.png "chef.png") This limitation is necessary because activated proposals are created as roles in Chef and follow a prescribed naming convention.
 
 > #####Crowbar stores barclamps in the Chef under the Crowbar data bag using bc-template-[barclamp] as the naming pattern.   When a proposal is created, the instance copy is also stored in the Crowbar data bag.  Only active proposals have roles created for them.  
 
@@ -784,9 +784,9 @@ To create a new proposal, expand the barclamp row to expose the create form for 
 
 Selecting a proposal from on the list navigates to the proposal details page.
 
-![proposal.png](http://localhost/proposal.png "proposal.png") 
+![proposal.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal.png "proposal.png") 
 
-> #####![notes.png](http://localhost/notes.png "notes.png") If a proposal is active, you will be initially taken to a read only view of the proposal.  It is acceptable to edit an active proposal and re-apply.  To access the proposal editor from the read only view, click the edit button.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") If a proposal is active, you will be initially taken to a read only view of the proposal.  It is acceptable to edit an active proposal and re-apply.  To access the proposal editor from the read only view, click the edit button.
 
 Selecting the name of the proposal on the list opens the Edit Proposal page.  All proposals have two primary edit areas:  Attributes (yellow in figure) and Deployment.  Attributes are configurable data that is used by the Chef recipes.  Deployment is the Chef roles and nodes assigned to those roles.  
 
@@ -794,15 +794,15 @@ Since each barclamp has unique attributes and roles you should consult the docum
 
 Each barclamp may provide a custom editor for its attributes and node deployment information.  The typical custom editor lets you set attribute values using a form and drag and drop nodes from the available list (left column) into the roles associated with the barclamp (right, red on figure).  Each barclamp may have specific logic that requires minimum or maximums for node assignments.
 
-> #####![notes.png](http://localhost/notes.png "notes.png") While most barclamps coordinate with Chef to perform node deployments, Crowbar includes some special function barclamps that can be used to change how Crowbar operates.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") While most barclamps coordinate with Chef to perform node deployments, Crowbar includes some special function barclamps that can be used to change how Crowbar operates.
 
 If the barclamp does not have customer editor or your browser does not support the editor, Crowbar automatically uses a raw JSON editor.  You can also use this view if you want to see the entire configuration details.  Selecting the Raw view option on the right side of the Attributes or Deployment panel opens the JSON editor for that section.  This option lets you directly edit the JSON configuration details for the proposal.  This option is typically used when developing new barclamps or for advanced users only.
 
 When you have finished editing the proposal, you may save or apply it.  Save retains your configuration settings.  Apply save and then applies your proposal so that Crowbar to begin deploying the barclamp on the selected nodes.  Deleting a proposal removes it from the system and you lose your configuration.
 
-> #####![notes.png](http://localhost/notes.png "notes.png")    If you attempt to apply a proposal that does not have sufficient nodes then Crowbar shows that proposal as queued.  This is likely to happen if you select nodes that have not been allocated.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png")    If you attempt to apply a proposal that does not have sufficient nodes then Crowbar shows that proposal as queued.  This is likely to happen if you select nodes that have not been allocated.
 
-> #####![chef.png](http://localhost/chef.png "chef.png") When you apply a proposal, Crowbar creates Chef roles, and then puts them into the run list of the selected nodes.
+> #####![chef.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/chef.png "chef.png") When you apply a proposal, Crowbar creates Chef roles, and then puts them into the run list of the selected nodes.
 
 > ##### Crowbar uses a naming pattern for Roles that let you quickly figure out which barclamp and proposal is being applied to a node's run list in Chef.  The instantiated barclamp naming pattern is [barclamp]-config-[proposal]. Barclamps then use additional roles to control node proposal membership (aka the Run List)
 
@@ -816,7 +816,7 @@ To allow control of the process, Crowbar breaks deployment into phases.  You mus
 
 Understanding the Barclamp life cycle is essential to understanding Crowbar interface layout.
 
-![Life Cycle](http://localhost/deployment_life_cycle.png)
+![Life Cycle](https://raw.github.com/srinivasgowda/doc_test/master/pics/deployment_life_cycle.png)
 
 ####Figure 1 Life Cycle of a Barclamp from Concept to Proposal and Deployment
 
@@ -830,15 +830,15 @@ Once a proposal has become active, you may still edit it and reapply the changes
 
 If you delete an inactive proposal then your configuration changes will be lost.
 
-#####![notes.png](http://localhost/notes.png "notes.png")     Many barclamps, require multiple nodes before they can be deployed.  A proposal is not deploy until it has sufficient capacity.
+#####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png")     Many barclamps, require multiple nodes before they can be deployed.  A proposal is not deploy until it has sufficient capacity.
 
-#####![chef.png](http://localhost/chef.png "chef.png") You must edit a barclamp in the Crowbar data bag in Chef to change the attribute defaults of a barclamp when not using the Crowbar UI.
+#####![chef.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/chef.png "chef.png") You must edit a barclamp in the Crowbar data bag in Chef to change the attribute defaults of a barclamp when not using the Crowbar UI.
 
 At the time a proposal is applied, Crowbar updates the [Run List] of the Crowbar managed node role in Chef.
 
 The following table shows options for changes to proposals based on their current state
 
-![Current State](http://localhost/current_state.png "The following table shows options for changes to proposals based on their current state" )
+![Current State](https://raw.github.com/srinivasgowda/doc_test/master/pics/current_state.png "The following table shows options for changes to proposals based on their current state" )
 
 
 <a id="PXE-State-Machine"/>
@@ -846,7 +846,7 @@ The following table shows options for changes to proposals based on their curren
 
 While Crowbar brings systems up the systems run through a series of states each of which preforms different actions on the systems.  This is controlled by the Provisioner barclamp and the status of any of the systems is indicated by the icon next to the representation of the system on the Dashboard page.  You can see a description of the state which a system is in by hovering over the status icon.
 
-![State Machine](http://localhost/state_machine.png)
+![State Machine](https://raw.github.com/srinivasgowda/doc_test/master/pics/state_machine.png)
 
 ####Figure 3 shows the states a system progresses through to fully provision a system
 
@@ -1128,7 +1128,7 @@ The Provisioner provides the roles and recipes to set up the provisioning server
  </tr>
 </table>
 
-#####![notes.png](http://localhost/notes.png "notes.png") While neither is required, one of default_password or default_password_hash is required.
+#####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") While neither is required, one of default_password or default_password_hash is required.
 
 <a id="Network-Barclamp"/>
 ##Network Barclamp
@@ -1289,7 +1289,7 @@ Modification of the following parameters should only be done at install time.
 
 </table>
 
-> #####![caution.png](http://localhost/caution.png "caution.png") Settings in the Network barclamp should not be changed after the installation of the Admin Node.
+> #####![caution.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/caution.png "caution.png") Settings in the Network barclamp should not be changed after the installation of the Admin Node.
 
 <a id="RAID-Barclamp"/>
 ##RAID Barclamp
@@ -1391,7 +1391,7 @@ The NTP Barclamp provides a common NTP service for the cluster. You can specify 
  </tr>
 </table>
 
-> #####![notes.png](http://localhost/notes.png "notes.png") If you are setting up an external server it can take up to 5 minutes for the nodes to sync with the server.  Systems should not be rebooted during this process.  If systems are rebooted they pause as the sync occurs.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") If you are setting up an external server it can take up to 5 minutes for the nodes to sync with the server.  Systems should not be rebooted during this process.  If systems are rebooted they pause as the sync occurs.
 
 <a id="Logging-Barclamp"/>
 ##Logging Barclamp
@@ -1504,14 +1504,14 @@ You should consult the getting started guide and barclamps specific to your syst
 ##Managing Barclamps
 This section briefly describes barclamps, and how to import barclamps. 
 
-> #####![notes.png](http://localhost/notes.png "notes.png") For information about creating barclamps, please visit [GitHub - Barclamp:-create-&-install-steps](https://github.com/dellcloudedge/crowbar/wiki/Barclamp:-create-&-install-steps) 
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") For information about creating barclamps, please visit [GitHub - Barclamp:-create-&-install-steps](https://github.com/dellcloudedge/crowbar/wiki/Barclamp:-create-&-install-steps) 
 
 <a id="Introduction2"/>
 ###Introduction
 
 A barclamp is a deployment module that is imported from its own code repository into the Crowbar framework. A barclamp cannot operate without Crowbar, but you do not have to create a unique build of Crowbar in order to create a barclamp.
 
-> #####![notes.png](http://localhost/notes.png "notes.png") You must install Crowbar before importing barclamps.
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") You must install Crowbar before importing barclamps.
 
 <a id="Importing-a-barclamp"/>
 ###Importing a Barclamp
@@ -1552,7 +1552,7 @@ To help facilitate troubleshooting of the environment a utility to gather logs h
 
 ----------------------
 
-> #####![notes.png](http://localhost/notes.png "notes.png") Depending on the size of the logs to be gathered this utility may take a while to run
+> #####![notes.png](https://raw.github.com/srinivasgowda/doc_test/master/pics/notes.png "notes.png") Depending on the size of the logs to be gathered this utility may take a while to run
 
 ----------------------
 
