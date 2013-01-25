@@ -292,7 +292,7 @@ The default networks are presented in the following table.  These defaults can b
 
 
 <a id="table-Default-Networks" />
-<table border="1" cellspacing="0">
+<table>
 <caption>Table 1.1: Default Networks</caption>
 	<tr>
 		<th>Usage 				</th>
