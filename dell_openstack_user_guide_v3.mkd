@@ -1,7 +1,7 @@
 #Crowbar User Guide 
 ##Version 1.2
 
-![crowbar img](http://localhost/crowbar.png)
+![crowbar img]( https://github.com/srinivasgowda/doc_test/blob/master/pics/barclamp.png )
 
 ##Revised 12/19/2011
 
