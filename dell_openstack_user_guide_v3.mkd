@@ -1,15 +1,11 @@
 #Crowbar User Guide 
 ##Version 1.2
 
-![crowbar img]( https://github.com/srinivasgowda/doc_test/blob/master/pics/barclamp.png )
+![crowbar img]( https://raw.github.com/srinivasgowda/doc_test/master/pics/crowbar.png )
 
 ##Revised 12/19/2011
 
 ###For the most recent versions consult [Crowbar Wiki ](http://github.com/dellcloudedge/crowbar/wiki "Wiki")
-
-![teest]( https://raw.github.com/srinivasgowda/doc_test/blob/master/pics/pic.jpg)
-![tsest]( https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/ineeman.png)
-
 
 ###DOCUMENT PROVIDED UNDER APACHE 2 LICENSE 
 ------------------------------------------------
