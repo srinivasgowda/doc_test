@@ -623,6 +623,56 @@ The top of the group box (red in illustration) shows the Switch MAC address and 
 
 ![Deployment States](https://raw.github.com/srinivasgowda/doc_test/master/pics/deployment_status.png "Table 2.2: Deployment States")
 
+
+<a id="table-Service-URLs" />
+<table>
+<caption> Table 2.2: Deployment Status</caption>
+	<tr>
+		<th>Status				</th>
+		<th>Icon					</th>
+		<th>Comment 				</th>
+		<th>User Action			</th>
+	</tr>
+	<tr>
+  		<td>Ready					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/ready.png" alt="ready">			</td>
+  		<td>Requested services provisioned				</td>
+		<td>Configure as needed			</td>
+ 	</tr>
+
+	<tr>
+  		<td>Waiting					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/s_none.png" alt="state none"> blinking</td>
+  		<td>Waiting for user input			</td>
+  		<td>Node waiting to be allocated. See "Bulk Edit" or include node in a proposal				</td>
+  		
+	<tr>
+  		<td>Pending					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/pending.png" alt="pending"> solid			</td>
+  		<td>Hardware and Operating System Installation				</td>
+		<td>Note: Crowbar is working			</td>
+ 	</tr>
+	<tr>
+  		<td>In Process					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/working.png" alt="working"> spinning			</td>
+  		<td>Crowbar and Chef actively deploying				</td>
+  		<td>None: Crowbar is working 				</td>
+ 	</tr>
+	<tr>
+  		<td>Failed 					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="failed"> blinking		</td>
+  		<td>Failure detected operating on Node				</td>
+  		<td>Correct issue			</td>
+ 	</tr>
+	<tr>
+  		<td>Unknown 					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="failed"> blinking		</td>
+  		<td>In between states or not reporting for 20 minutes (likely powered off).				</td>
+  		<td>Restart server if desired	</td>
+ 	</tr>
+
+</table>
+
 The Admin node is the node that runs the Crowbar, Chef, and other core services.  It exists in the system before the user interface is available.
 
 <a id="Node-Details"/>
@@ -1009,12 +1059,9 @@ At the time a proposal is applied, Crowbar updates the [Run List] of the Crowbar
 
 The following table shows options for changes to proposals based on their current state
 
-![Current State](https://raw.github.com/srinivasgowda/doc_test/master/pics/current_state.png "The following table shows options for changes to proposals based on their current state" )
-
 
 <a id="table-Service-URLs" />
 <table>
-<caption>  Current State</caption>
 	<tr>
 		<th>Status				</th>
 		<th>Icon					</th>
