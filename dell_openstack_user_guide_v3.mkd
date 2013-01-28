@@ -851,36 +851,36 @@ A barclamp will show the status of the proposals that are attached to it using a
 		<td>Create a proposalfor the barclamp if desired			</td>
   		
  	</tr>
-		<tr>User Input
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/user_input.png" alt="state none">					</td>
+		<td>User Input 			</td> 
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/user_input.png" alt="user input">					</td>
   		<td>Apply			</td>
   		<td>Proposal waiting for user input and activation		</td>
 		<td>Edit the proposal. Apply proposal after review		</td>
  	</tr>
 	<tr>
   		<td>Ready					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/ready.png" alt="state none">			</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/ready.png" alt="ready">			</td>
   		<td>Deactivate				</td>
 		<td>Proposal has been deployed			</td>
   		<td>Ready for use				</td>
  	</tr>
 	<tr>
   		<td>Pending					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/pending.png" alt="state none">			</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/pending.png" alt="pending"> blinking			</td>
   		<td>Dequeue				</td>
 		<td>Queued for deployment			</td>
   		<td>Needs additional resources and/or configuration				</td>
  	</tr>
 	<tr>
   		<td>Working					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/working.png" alt="state none">			</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/working.png" alt="working"> spinning			</td>
   		<td>None				</td>
 		<td>Proposal is being configured			</td>
   		<td>None: Crowbar is working 				</td>
  	</tr>
 	<tr>
   		<td>Failed 					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="state none"> blinking		</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="failed"> blinking		</td>
   		<td>Apply				</td>
 		<td>Proposal failed during Apply			</td>
   		<td>Correct error and reapply proposal			</td>
