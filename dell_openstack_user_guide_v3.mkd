@@ -149,6 +149,61 @@
 ####[Crowbar Support](#Crowbar-Support)
 
 
+<a id="table-Service-URLs" />
+<table>
+<caption>Table 2.1: Service URLs</caption>
+	<tr>
+		<th>Status				</th>
+		<th>Icon					</th>
+		<th>Next Step 				</th>
+		<th>Comment 				</th>
+		<th>User Interaction			</th>
+	</tr>
+	<tr>
+  		<td>None					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/s_none.png" alt="state none"></td>
+  		<td>Create			</td>
+  		<td>No proposal has been assigned to the barclamp				</td>
+		<td>Create a proposalfor the barclamp if desired			</td>
+  		
+ 	</tr>
+		<tr>User Input
+  		<td>					</td>
+  		<td>Apply			</td>
+  		<td>Proposal waiting for user input and activation		</td>
+		<td>Edit the proposal. Apply proposal after review		</td>
+ 	</tr>
+	<tr>
+  		<td>					</td>
+  		<td>			</td>
+  		<td>				</td>
+		<td>			</td>
+  		<td>				</td>
+ 	</tr>
+	<tr>
+  		<td>					</td>
+  		<td>			</td>
+  		<td>				</td>
+		<td>			</td>
+  		<td>				</td>
+ 	</tr>
+	<tr>
+  		<td>					</td>
+  		<td>			</td>
+  		<td>				</td>
+		<td>			</td>
+  		<td>				</td>
+ 	</tr>
+	<tr>
+  		<td>					</td>
+  		<td>			</td>
+  		<td>				</td>
+		<td>			</td>
+  		<td>				</td>
+ 	</tr>
+</table>
+
+
 
 <a id="Introduction"/>
 #Introduction
