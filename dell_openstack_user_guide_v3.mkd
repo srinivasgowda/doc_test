@@ -666,6 +666,65 @@ A barclamp will show the status of the proposals that are attached to it using a
 
 ![proposal status](https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status.png) 
 
+
+
+<a id="table-Service-URLs" />
+<table>
+<caption> Table 4.59: Proposal Status</caption>
+	<tr>
+		<th>Status				</th>
+		<th>Icon					</th>
+		<th>Next Step 				</th>
+		<th>Comment 				</th>
+		<th>User Interaction			</th>
+	</tr>
+	<tr>
+  		<td>None					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/s_none.png" alt="state none"></td>
+  		<td>Create			</td>
+  		<td>No proposal has been assigned to the barclamp				</td>
+		<td>Create a proposal for the barclamp if desired			</td>
+  		
+ 	</tr>
+		<td>User Input 			</td> 
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/user_input.png" alt="user input">					</td>
+  		<td>Delete or Apply			</td>
+  		<td>Proposal waiting for user input and activation		</td>
+		<td>Edit the proposal. Apply proposal after review		</td>
+ 	</tr>
+	<tr>
+  		<td>Ready					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/ready.png" alt="ready">			</td>
+  		<td>Deactivate or Apply				</td>
+		<td>Proposal has been deployed			</td>
+  		<td>Ready for use				</td>
+ 	</tr>
+	<tr>
+  		<td>Pending					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/pending.png" alt="pending"> blinking			</td>
+  		<td>Dequeue				</td>
+		<td>Queued for deployment			</td>
+  		<td>Needs additional resources and/or configuration				</td>
+ 	</tr>
+	<tr>
+  		<td>Working					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/working.png" alt="working"> spinning			</td>
+  		<td>None				</td>
+		<td>Proposal is being configured			</td>
+  		<td>None: Crowbar is working 				</td>
+ 	</tr>
+	<tr>
+  		<td>Failed 					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="failed"> blinking		</td>
+  		<td>Apply				</td>
+		<td>Proposal failed during Apply			</td>
+  		<td>Correct error and reapply proposal			</td>
+ 	</tr>
+</table>
+
+
+
+
 From the Barclamp list, you may take actions on the proposals based on
 their state as shown in the table above.  Please review the *Life Cycle*
 section for more information about the different proposal states.
@@ -829,13 +888,10 @@ The Barclamps page shows a list of all available barclamps (see “Included Barc
 
 A barclamp will show the status of the proposals that are attached to it using a status light (see table below).  If multiple proposals are assigned, then multiple light are displayed.  If there are no proposals, a diamond is displayed.  Hovering over the light will show you the name and status of the matching proposal.  The proposals status updates automatically without a refresh.
 
-####Table 4.59: Proposal Status
-
-![proposal status](https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status.png) 
 
 <a id="table-Service-URLs" />
 <table>
-<caption>Table 2.1: Proposal Status</caption>
+<caption> Table 4.59: Proposal Status</caption>
 	<tr>
 		<th>Status				</th>
 		<th>Icon					</th>
@@ -848,7 +904,7 @@ A barclamp will show the status of the proposals that are attached to it using a
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/s_none.png" alt="state none"></td>
   		<td>Create			</td>
   		<td>No proposal has been assigned to the barclamp				</td>
-		<td>Create a proposalfor the barclamp if desired			</td>
+		<td>Create a proposal for the barclamp if desired			</td>
   		
  	</tr>
 		<td>User Input 			</td> 
