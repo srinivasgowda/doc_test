@@ -642,7 +642,7 @@ The top of the group box (red in illustration) shows the Switch MAC address and 
 
 	<tr>
   		<td>Waiting					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/s_none.png" alt="state none"> blinking</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/waiting.png" alt="waiting"> blinking</td>
   		<td>Waiting for user input			</td>
   		<td>Node waiting to be allocated. See "Bulk Edit" or include node in a proposal				</td>
   		
@@ -666,7 +666,7 @@ The top of the group box (red in illustration) shows the Switch MAC address and 
  	</tr>
 	<tr>
   		<td>Unknown 					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="failed"> blinking		</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/user_input.png" alt="unknown"> 		</td>
   		<td>In between states or not reporting for 20 minutes (likely powered off).				</td>
   		<td>Restart server if desired	</td>
  	</tr>
