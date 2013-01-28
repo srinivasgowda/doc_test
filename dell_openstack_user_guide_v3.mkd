@@ -880,7 +880,7 @@ A barclamp will show the status of the proposals that are attached to it using a
  	</tr>
 	<tr>
   		<td>Failed 					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="state none">			</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="state none"> blinking		</td>
   		<td>Apply				</td>
 		<td>Proposal failed during Apply			</td>
   		<td>Correct error and reapply proposal			</td>
