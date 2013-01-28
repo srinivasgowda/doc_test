@@ -619,11 +619,6 @@ Nodes are shown organized by the physical switching infrastructure, which is dis
 
 The top of the group box (red in illustration) shows the Switch MAC address and a pie chart of the nodes's status within each group.  Nodes (yellow in illustration) connected to the switch display in port order (lowest on top) with their current deployment state shown by the status light. 
 
-####Table 2.2: Deployment States
-
-![Deployment States](https://raw.github.com/srinivasgowda/doc_test/master/pics/deployment_status.png "Table 2.2: Deployment States")
-
-
 <a id="table-Service-URLs" />
 <table>
 <caption> Table 2.2: Deployment Status</caption>
