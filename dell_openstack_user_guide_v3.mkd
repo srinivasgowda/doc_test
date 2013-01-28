@@ -662,12 +662,6 @@ The Barclamps page shows a list of all available barclamps (see "Included Barcla
 A barclamp will show the status of the proposals that are attached to it using a status light (see table below).  If multiple proposals are assigned, then multiple light are displayed.  If there are no proposals, a diamond is displayed.  Hovering over the light will show you the name and status of the matching proposal.  The proposals status updates automatically without a refresh.
 
 
-###Table 4.59: Proposal Status
-
-![proposal status](https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status.png) 
-
-
-
 <a id="table-Service-URLs" />
 <table>
 <caption> Table 4.59: Proposal Status</caption>
@@ -1017,6 +1011,60 @@ The following table shows options for changes to proposals based on their curren
 
 ![Current State](https://raw.github.com/srinivasgowda/doc_test/master/pics/current_state.png "The following table shows options for changes to proposals based on their current state" )
 
+
+<a id="table-Service-URLs" />
+<table>
+<caption>  Current State</caption>
+	<tr>
+		<th>Status				</th>
+		<th>Icon					</th>
+		<th>Forwards 				</th>
+		<th>Backwards 				</th>
+		<th>Comment			</th>
+	</tr>
+	<tr>
+  		<td>None					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/s_none.png" alt="state none"></td>
+  		<td>Create			</td>
+  		<td>None 				</td>
+		<td>You must create proposal			</td>
+  		
+ 	</tr>
+		<td>User Input 			</td> 
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/user_input.png" alt="user input">					</td>
+  		<td>Apply			</td>
+  		<td>Delete		</td>
+		<td>		</td>
+ 	</tr>
+	<tr>
+  		<td>Ready					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/ready.png" alt="ready">			</td>
+  		<td>Apply				</td>
+		<td>Deactivate			</td>
+  		<td>You may reapply without deactivating a proposal				</td>
+ 	</tr>
+	<tr>
+  		<td>Pending					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/pending.png" alt="pending"> blinking			</td>
+  		<td>None: Proposal Queued				</td>
+		<td>Dequeue			</td>
+  		<td>Crowbar is building nodes during this phase				</td>
+ 	</tr>
+	<tr>
+  		<td>Not Ready					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/working.png" alt="working"> spinning			</td>
+  		<td>None: System Working				</td>
+		<td>None: System Working			</td>
+  		<td> 				</td>
+ 	</tr>
+	<tr>
+  		<td>Failed 					</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="failed"> blinking		</td>
+  		<td>Apply (after fixing issue)				</td>
+		<td>Delete			</td>
+  		<td>In some cases, reapplying the proposal is sufficient to fix			</td>
+ 	</tr>
+</table>
 
 <a id="PXE-State-Machine"/>
 ###PXE State Machine
