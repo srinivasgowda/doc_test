@@ -148,63 +148,6 @@
 
 ####[Crowbar Support](#Crowbar-Support)
 
-
-<a id="table-Service-URLs" />
-<table>
-<caption>Table 2.1: Service URLs</caption>
-	<tr>
-		<th>Status				</th>
-		<th>Icon					</th>
-		<th>Next Step 				</th>
-		<th>Comment 				</th>
-		<th>User Interaction			</th>
-	</tr>
-	<tr>
-  		<td>None					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/s_none.png" alt="state none"></td>
-  		<td>Create			</td>
-  		<td>No proposal has been assigned to the barclamp				</td>
-		<td>Create a proposalfor the barclamp if desired			</td>
-  		
- 	</tr>
-		<tr>User Input
-  		<td>					</td>
-  		<td>Apply			</td>
-  		<td>Proposal waiting for user input and activation		</td>
-		<td>Edit the proposal. Apply proposal after review		</td>
- 	</tr>
-	<tr>
-  		<td>					</td>
-  		<td>			</td>
-  		<td>				</td>
-		<td>			</td>
-  		<td>				</td>
- 	</tr>
-	<tr>
-  		<td>					</td>
-  		<td>			</td>
-  		<td>				</td>
-		<td>			</td>
-  		<td>				</td>
- 	</tr>
-	<tr>
-  		<td>					</td>
-  		<td>			</td>
-  		<td>				</td>
-		<td>			</td>
-  		<td>				</td>
- 	</tr>
-	<tr>
-  		<td>					</td>
-  		<td>			</td>
-  		<td>				</td>
-		<td>			</td>
-  		<td>				</td>
- 	</tr>
-</table>
-
-
-
 <a id="Introduction"/>
 #Introduction
 -----------------------------------
@@ -399,59 +342,59 @@ Each network defined in the system has the following parameters:
 
 <a id="table-Network-Parameters" />
 <table>
-<caption>Table 1.2: Network Parameters</caption>
+<caption>Table 1.2: Network Parameters	</caption>
 	<tr>
   		<th>Name 					</th>
   		<th>Default 				</th>
   		<th>Description 				</th>
 	</tr>
 	<tr>
- 	 	<th>vlan 					</th>
-  		<th>Integer 				</th>
-  		<th>The vlan to use on the switch and interfaces 
-		for this network				</th>
+ 	 	<td>vlan 					</td>
+  		<td>Integer 				</td>
+  		<td>The vlan to use on the switch and interfaces 
+		for this network				</td>
 	</tr>
 	<tr>
-  		<th>use_vlan 				</th>
-  		<th>true 					</th>
-  		<th>A value of true indicates that the vlan should 
+  		<td>use_vlan 				</td>
+  		<td>true 					</td>
+  		<td>A value of true indicates that the vlan should 
 		applied to the interface. A value of false assumes 
 		that the node will receive untagged traffic for 
-		this network. 				</th>
+		this network. 				</td>
 	</tr>
 	<tr>
-  		<th>add_bridge 				</th>
-  		<th>false 				</th>
-  		<th>indicates if the network should have a bridge built 
-		on top of it. The bridge will be br.		</th>
+  		<td>add_bridge 				</td>
+  		<td>false 				</td>
+  		<td>indicates if the network should have a bridge built 
+		on top of it. The bridge will be br.		</td>
  	</tr>
 	<tr>
-  		<th>subnet 				</th>
-  		<th>IP Address				</th>
-  		<th>The subnet for this network 		</th>
+  		<td>subnet 				</td>
+  		<td>IP Address				</td>
+  		<td>The subnet for this network 		</td>
 	</tr>
 	<tr>
-  		<th>netmask				</th>
-  		<th>Netmask 				</th>
-  		<th>The netmask for this network 		</th>
+  		<td>netmask				</td>
+  		<td>Netmask 				</td>
+  		<td>The netmask for this network 		</td>
 	</tr>
 	<tr>
-  		<th>router 				</th>
-  		<th>IP Address				</th>
-  		<th>The default router for this network 	</th>
+  		<td>router 				</td>
+  		<td>IP Address				</td>
+  		<td>The default router for this network 	</td>
 	</tr>
 	<tr>
-  		<th>broadcast				</th>
-  		<th>IP Address				</th>
-  		<th>The default broadcast address for this network</th>
+  		<td>broadcast				</td>
+  		<td>IP Address				</td>
+  		<td>The default broadcast address for this network</td>
 	</tr>
 	<tr>
-  		<th>ranges 				</th>
-  		<th>map					</th>
-  		<th>This contains a map of strings to start and stop 
+  		<td>ranges 				</td>
+  		<td>map					</td>
+  		<td>This contains a map of strings to start and stop 
 		values for network. This allows for sub-ranges with
 		the network for specific uses. e.g. dhcp, admin, 
-		bmc, hosts.				</th>
+		bmc, hosts.				</td>
  	</tr>
 </table>
 
@@ -626,46 +569,46 @@ The top of the group box (red in illustration) shows the Switch MAC address and 
 		<th>Status				</th>
 		<th>Icon					</th>
 		<th>Comment 				</th>
-		<th>User Action			</th>
+		<th>User Action				</th>
 	</tr>
 	<tr>
   		<td>Ready					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/ready.png" alt="ready">			</td>
-  		<td>Requested services provisioned				</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/ready.png" alt="ready">					</td>
+  		<td>Requested services provisioned		</td>
 		<td>Configure as needed			</td>
  	</tr>
 
 	<tr>
-  		<td>Waiting					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/waiting.png" alt="waiting"> blinking</td>
+  		<td>Waiting				</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/waiting.png" alt="waiting"> blinking				</td>
   		<td>Waiting for user input			</td>
-  		<td>Node waiting to be allocated. See "Bulk Edit" or include node in a proposal				</td>
-  		
-	<tr>
-  		<td>Pending					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/pending.png" alt="pending"> solid			</td>
-  		<td>Hardware and Operating System Installation				</td>
+  		<td>Node waiting to be allocated. See 
+		"Bulk Edit" or include node in a proposal	</td>
+  	<tr>
+  		<td>Pending				</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/pending.png" alt="pending"> solid				</td>
+  		<td>Hardware and Operating System Installation	</td>
 		<td>Note: Crowbar is working			</td>
  	</tr>
 	<tr>
-  		<td>In Process					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/working.png" alt="working"> spinning			</td>
-  		<td>Crowbar and Chef actively deploying				</td>
-  		<td>None: Crowbar is working 				</td>
+  		<td>In Process				</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/working.png" alt="working"> spinning				</td>
+  		<td>Crowbar and Chef actively deploying		</td>
+  		<td>None: Crowbar is working 			</td>
  	</tr>
 	<tr>
-  		<td>Failed 					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="failed"> blinking		</td>
-  		<td>Failure detected operating on Node				</td>
-  		<td>Correct issue			</td>
+  		<td>Failed 				</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="failed"> blinking				</td>
+  		<td>Failure detected operating on Node		</td>
+  		<td>Correct issue				</td>
  	</tr>
 	<tr>
-  		<td>Unknown 					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/user_input.png" alt="unknown"> 		</td>
-  		<td>In between states or not reporting for 20 minutes (likely powered off).				</td>
-  		<td>Restart server if desired	</td>
+  		<td>Unknown 				</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/user_input.png" alt="unknown"> 					</td>
+  		<td>In between states or not reporting for 
+		20 minutes (likely powered off).		</td>
+  		<td>Restart server if desired			</td>
  	</tr>
-
 </table>
 
 The Admin node is the node that runs the Crowbar, Chef, and other core services.  It exists in the system before the user interface is available.
@@ -720,48 +663,47 @@ A barclamp will show the status of the proposals that are attached to it using a
 	<tr>
   		<td>None					</td>
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/s_none.png" alt="state none"></td>
-  		<td>Create			</td>
-  		<td>No proposal has been assigned to the barclamp				</td>
-		<td>Create a proposal for the barclamp if desired			</td>
+  		<td>Create				</td>
+  		<td>No proposal has been assigned to the barclamp	</td>
+		<td>Create a proposal for the barclamp if desired	</td>
   		
  	</tr>
-		<td>User Input 			</td> 
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/user_input.png" alt="user input">					</td>
-  		<td>Delete or Apply			</td>
-  		<td>Proposal waiting for user input and activation		</td>
-		<td>Edit the proposal. Apply proposal after review		</td>
+		<td>User Input 				</td> 
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/user_input.png" alt="user input">				</td>
+  		<td>Delete or Apply				</td>
+  		<td>Proposal waiting for user input and activation</td>
+		<td>Edit the proposal. Apply proposal after review</td>
  	</tr>
 	<tr>
   		<td>Ready					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/ready.png" alt="ready">			</td>
-  		<td>Deactivate or Apply				</td>
-		<td>Proposal has been deployed			</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/ready.png" alt="ready">					</td>
+  		<td>Deactivate or Apply			</td>
+		<td>Proposal has been deployed		</td>
   		<td>Ready for use				</td>
  	</tr>
 	<tr>
-  		<td>Pending					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/pending.png" alt="pending"> blinking			</td>
+  		<td>Pending				</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/pending.png" alt="pending"> blinking				</td>
   		<td>Dequeue				</td>
 		<td>Queued for deployment			</td>
-  		<td>Needs additional resources and/or configuration				</td>
+  		<td>Needs additional resources and/or 
+		configuration				</td>
  	</tr>
 	<tr>
-  		<td>Working					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/working.png" alt="working"> spinning			</td>
-  		<td>None				</td>
-		<td>Proposal is being configured			</td>
-  		<td>None: Crowbar is working 				</td>
+  		<td>Working				</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/working.png" alt="working"> spinning				</td>
+  		<td>None					</td>
+		<td>Proposal is being configured		</td>
+  		<td>None: Crowbar is working 			</td>
  	</tr>
 	<tr>
-  		<td>Failed 					</td>
-  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="failed"> blinking		</td>
-  		<td>Apply				</td>
-		<td>Proposal failed during Apply			</td>
-  		<td>Correct error and reapply proposal			</td>
+  		<td>Failed 				</td>
+  		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="failed"> blinking				</td>
+  		<td>Apply					</td>
+		<td>Proposal failed during Apply		</td>
+  		<td>Correct error and reapply proposal		</td>
  	</tr>
 </table>
-
-
 
 
 From the Barclamp list, you may take actions on the proposals based on
@@ -822,29 +764,34 @@ The buttons on the top of the details panel (Identify, Power On, Shutdown and Re
 <table>
 <caption>Table 2-3: Details Panel Buttons</caption>
 	<tr>
-		<th>Button						</th>
-  		<th>Action						</th>
-  		<th>Useful When						</th>
+		<th>Button				</th>
+  		<th>Action				</th>
+  		<th>Useful When				</th>
 	</tr>
 	<tr>
-  		<td>Identify						</td>
-  		<td>Causes the identify light to blink for 15 seconds.		</td>
-  		<td>Trying to identify a node within a rack.			</td>
+  		<td>Identify				</td>
+  		<td>Causes the identify light to blink for
+		 15 seconds.				</td>
+  		<td>Trying to identify a node within a rack.	</td>
  	</tr>
 	<tr>
-  		<td>Power On						</td>
- 		<td>Sends a power on signal to the BMC of the selected system.	</td>
-  		<td>Remotely powering on a system.				</td>
+  		<td>Power On				</td>
+ 		<td>Sends a power on signal to the BMC of
+		 the selected system.			</td>
+  		<td>Remotely powering on a system.		</td>
  	</tr>
 	<tr>
-  		<td>Shutdown						</td>
-  		<td>Sends a power off signal to the BMC of the selected system.	</td>
-  		<td>Remotely powering on a system.				</td>
+  		<td>Shutdown				</td>
+  		<td>Sends a power off signal to the BMC of
+		 the selected system.			</td>
+  		<td>Remotely powering on a system.		</td>
  	</tr>
 	<tr>
-  		<td>Reboot						</td>
-  		<td>Sends a power cycle signal to the BMC of the selected system.	</td>
-  		<td>Remotely power cycling a system, which has stopped responding.	</td>
+  		<td>Reboot				</td>
+  		<td>Sends a power cycle signal to the BMC of
+	 	the selected system.			</td>
+  		<td>Remotely power cycling a system, which
+		 has stopped responding.			</td>
  	</tr>
 </table>
 
@@ -932,53 +879,53 @@ A barclamp will show the status of the proposals that are attached to it using a
 <table>
 <caption> Table 4.59: Proposal Status</caption>
 	<tr>
-		<th>Status				</th>
-		<th>Icon					</th>
-		<th>Next Step 				</th>
-		<th>Comment 				</th>
-		<th>User Interaction			</th>
+		<th>Status						</th>
+		<th>Icon							</th>
+		<th>Next Step 						</th>
+		<th>Comment 						</th>
+		<th>User Interaction					</th>
 	</tr>
 	<tr>
-  		<td>None					</td>
+  		<td>None							</td>
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/s_none.png" alt="state none"></td>
-  		<td>Create			</td>
-  		<td>No proposal has been assigned to the barclamp				</td>
+  		<td>Create						</td>
+  		<td>No proposal has been assigned to the barclamp			</td>
 		<td>Create a proposal for the barclamp if desired			</td>
   		
  	</tr>
-		<td>User Input 			</td> 
+		<td>User Input 						</td> 
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/user_input.png" alt="user input">					</td>
-  		<td>Apply			</td>
+  		<td>Apply							</td>
   		<td>Proposal waiting for user input and activation		</td>
 		<td>Edit the proposal. Apply proposal after review		</td>
  	</tr>
 	<tr>
-  		<td>Ready					</td>
+  		<td>Ready							</td>
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/ready.png" alt="ready">			</td>
-  		<td>Deactivate				</td>
-		<td>Proposal has been deployed			</td>
-  		<td>Ready for use				</td>
+  		<td>Deactivate						</td>
+		<td>Proposal has been deployed				</td>
+  		<td>Ready for use						</td>
  	</tr>
 	<tr>
-  		<td>Pending					</td>
+  		<td>Pending						</td>
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/pending.png" alt="pending"> blinking			</td>
-  		<td>Dequeue				</td>
-		<td>Queued for deployment			</td>
-  		<td>Needs additional resources and/or configuration				</td>
+  		<td>Dequeue						</td>
+		<td>Queued for deployment					</td>
+  		<td>Needs additional resources and/or configuration		</td>
  	</tr>
 	<tr>
-  		<td>Working					</td>
+  		<td>Working						</td>
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/working.png" alt="working"> spinning			</td>
-  		<td>None				</td>
-		<td>Proposal is being configured			</td>
-  		<td>None: Crowbar is working 				</td>
+  		<td>None							</td>
+		<td>Proposal is being configured				</td>
+  		<td>None: Crowbar is working 					</td>
  	</tr>
 	<tr>
-  		<td>Failed 					</td>
+  		<td>Failed 						</td>
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="failed"> blinking		</td>
-  		<td>Apply				</td>
-		<td>Proposal failed during Apply			</td>
-  		<td>Correct error and reapply proposal			</td>
+  		<td>Apply							</td>
+		<td>Proposal failed during Apply				</td>
+  		<td>Correct error and reapply proposal				</td>
  	</tr>
 </table>
 
@@ -1058,53 +1005,54 @@ The following table shows options for changes to proposals based on their curren
 <a id="table-Service-URLs" />
 <table>
 	<tr>
-		<th>Status				</th>
-		<th>Icon					</th>
-		<th>Forwards 				</th>
-		<th>Backwards 				</th>
-		<th>Comment			</th>
+		<th>Status					</th>
+		<th>Icon						</th>
+		<th>Forwards 					</th>
+		<th>Backwards 					</th>
+		<th>Comment					</th>
 	</tr>
 	<tr>
-  		<td>None					</td>
+  		<td>None						</td>
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/s_none.png" alt="state none"></td>
-  		<td>Create			</td>
-  		<td>None 				</td>
-		<td>You must create proposal			</td>
+  		<td>Create					</td>
+  		<td>None 						</td>
+		<td>You must create proposal				</td>
   		
  	</tr>
-		<td>User Input 			</td> 
+		<td>User Input 					</td> 
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/user_input.png" alt="user input">					</td>
-  		<td>Apply			</td>
-  		<td>Delete		</td>
-		<td>		</td>
+  		<td>Apply						</td>
+  		<td>Delete					</td>
+		<td>						</td>
  	</tr>
 	<tr>
-  		<td>Ready					</td>
+  		<td>Ready						</td>
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/ready.png" alt="ready">			</td>
-  		<td>Apply				</td>
-		<td>Deactivate			</td>
-  		<td>You may reapply without deactivating a proposal				</td>
+  		<td>Apply						</td>
+		<td>Deactivate					</td>
+  		<td>You may reapply without deactivating a proposal	</td>
  	</tr>
 	<tr>
   		<td>Pending					</td>
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/pending.png" alt="pending"> blinking			</td>
   		<td>None: Proposal Queued				</td>
-		<td>Dequeue			</td>
-  		<td>Crowbar is building nodes during this phase				</td>
+		<td>Dequeue					</td>
+  		<td>Crowbar is building nodes during this phase		</td>
  	</tr>
 	<tr>
   		<td>Not Ready					</td>
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/working.png" alt="working"> spinning			</td>
   		<td>None: System Working				</td>
-		<td>None: System Working			</td>
-  		<td> 				</td>
+		<td>None: System Working				</td>
+  		<td> 						</td>
  	</tr>
 	<tr>
   		<td>Failed 					</td>
   		<td><img  src="https://raw.github.com/srinivasgowda/doc_test/master/pics/proposal_status/failed.png" alt="failed"> blinking		</td>
-  		<td>Apply (after fixing issue)				</td>
-		<td>Delete			</td>
-  		<td>In some cases, reapplying the proposal is sufficient to fix			</td>
+  		<td>Apply (after fixing issue)			</td>
+		<td>Delete					</td>
+  		<td>In some cases, reapplying the proposal is
+		 sufficient to fix					</td>
  	</tr>
 </table>
 
